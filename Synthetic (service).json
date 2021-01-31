@@ -1,24 +1,72 @@
 {
     "metadata": {
         "configurationVersions": [3],
-        "clusterVersion": "1.208.93.20210111-080850"
+        "clusterVersion": "1.209.98.20210122-102634"
     },
-    "id": "5b5ed659-74f2-405b-b017-27cf37e3da6d",
+    "id": "bbbbbbbb-a001-a017-0006-000000000001",
     "dashboardMetadata": {
         "name": "✔ Synthetic (service)",
         "shared": true,
         "owner": "jean.louis.lormeau@dynatrace.com",
         "sharingDetails": {
-            "linkShared": true,
+            "linkShared": false,
             "published": true
         },
         "dashboardFilter": {
             "timeframe": "today"
         },
-        "tags": ["auto", "accueil"]
+        "tags": ["smarter"]
     },
     "tiles": [{
-        "name": "\uD83D\uDEA6Etat de santé",
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1406,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "\uD83C\uDFE0 [Dynatrace: simply smarter](#dashboard;gf=all;id=bbbbbbbb-a001-a017-0000-000000000001)\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1102,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "\uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a001-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a001-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "##\uD83D\uDD0D [Services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n- [database services](#dashboard;id=88d133db-658c-4b58-b45a-be90034f5805) \n- ✅ [synthetic (service)](#dashboard;id=bbbbbbbb-a001-a017-0006-000000000001) \n- [analysis↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) \n "
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1634,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "\uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
+    }, {
+        "name": "\uD83D\uDEA6Health",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -88,18 +136,6 @@
         "tileFilter": {},
         "chartVisible": true
     }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 1102,
-            "width": 570,
-            "height": 190
-        },
-        "tileFilter": {},
-        "markdown": "## [\uD83C\uDFE0 Accueil - Tableaux de bord](#dashboard;gf=all;id=e7abd417-f82f-4fe9-b8f6-f17a33243228)\n\n- [Experience utilisateur Web](#dashboard;id=9bf23d39-5f0f-433c-9445-f1fc1989471c)  / [Mobile](#dashboard;id=8c39e2a3-c7fb-4a28-85a0-80cff5c377ae) /  [Tests synthétiques](#dashboard;id=1600d6da-5ca2-4e23-8060-9f431f239855)  (browser)\n\n- [Services](#dashboard;id=87e1ef3f-cfb7-4d14-9570-d9c2bac27590) / [Base de données](#dashboard;id=9201ce03-bf4e-4ebc-aedb-1bf54c8436da) / ✔ [Tests synthétiques](#dashboard;id=5b5ed659-74f2-405b-b017-27cf37e3da6d) \n (service)\n\n- [Infrastructure](#dashboard;id=d2f0ff9c-8cfd-4dea-ba92-377c56fdf0d6)\n##[Synthetic↗](#monitors) "
-    }, {
         "name": "",
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
@@ -162,34 +198,34 @@
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Nombre de tests",
+        "name": "Number of tests",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 228,
-            "left": 494,
+            "left": 418,
             "width": 266,
             "height": 38
         },
         "tileFilter": {}
     }, {
-        "name": "Temps de réponse",
+        "name": "Response time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 228,
-            "left": 798,
+            "left": 722,
             "width": 266,
             "height": 38
         },
         "tileFilter": {}
     }, {
-        "name": "Erreurs",
+        "name": "HTTP errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 228,
-            "left": 1102,
+            "left": 1026,
             "width": 266,
             "height": 38
         },
@@ -212,14 +248,14 @@
         "configured": true,
         "bounds": {
             "top": 266,
-            "left": 798,
+            "left": 722,
             "width": 266,
             "height": 38
         },
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Disponibilité",
+        "name": "Availability",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -230,7 +266,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Disponibilité par Géolocalisation",
+        "name": "Availability by geolocation",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -253,7 +289,7 @@
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Erreurs HTTP",
+        "name": "HTTP errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -269,7 +305,7 @@
         "configured": true,
         "bounds": {
             "top": 266,
-            "left": 494,
+            "left": 418,
             "width": 266,
             "height": 38
         },
@@ -281,19 +317,19 @@
         "configured": true,
         "bounds": {
             "top": 266,
-            "left": 1102,
+            "left": 1026,
             "width": 266,
             "height": 38
         },
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Disponibilité",
+        "name": "Availability",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 228,
-            "left": 190,
+            "left": 114,
             "width": 266,
             "height": 38
         },
@@ -304,7 +340,7 @@
         "configured": true,
         "bounds": {
             "top": 266,
-            "left": 190,
+            "left": 114,
             "width": 266,
             "height": 38
         },
@@ -316,7 +352,7 @@
         "configured": true,
         "bounds": {
             "top": 304,
-            "left": 190,
+            "left": 114,
             "width": 266,
             "height": 152
         },
@@ -459,7 +495,7 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Temps de réponse",
+        "name": "Response time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -537,7 +573,7 @@
         "configured": true,
         "bounds": {
             "top": 304,
-            "left": 494,
+            "left": 418,
             "width": 266,
             "height": 152
         },
@@ -569,7 +605,7 @@
         "configured": true,
         "bounds": {
             "top": 304,
-            "left": 798,
+            "left": 722,
             "width": 266,
             "height": 152
         },
@@ -712,14 +748,14 @@
         "configured": true,
         "bounds": {
             "top": 304,
-            "left": 1102,
+            "left": 1026,
             "width": 266,
             "height": 152
         },
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "HTTP errors (sum)",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -784,5 +820,73 @@
             }
         },
         "chartVisible": true
+    }, {
+        "name": "Response size",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 1330,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1330,
+            "width": 266,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Response size (Average)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:synthetic.http.responseSize.geo",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SYNTHETIC_HTTPCHECK",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605717914829,
+                        "customColor": "#ef651f"
+                    },
+                    "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
+                        "lastModified": 1609940710337,
+                        "customColor": "#00ff00"
+                    },
+                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1605718015774,
+                        "customColor": "#ef651f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1330,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "----"
     }]
 }

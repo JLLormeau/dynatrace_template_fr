@@ -1,9 +1,9 @@
 {
     "metadata": {
         "configurationVersions": [3],
-        "clusterVersion": "1.208.93.20210111-080850"
+        "clusterVersion": "1.209.98.20210122-102634"
     },
-    "id": "8c39e2a3-c7fb-4a28-85a0-80cff5c377ae",
+    "id": "bbbbbbbb-a001-a017-0003-000000000001",
     "dashboardMetadata": {
         "name": "✔ User experience (mobile apps)",
         "shared": true,
@@ -15,10 +15,58 @@
         "dashboardFilter": {
             "timeframe": "today"
         },
-        "tags": ["auto", "accueil"]
+        "tags": ["smarter"]
     },
     "tiles": [{
-        "name": "\uD83D\uDEA6Etat de santé",
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1406,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "\uD83C\uDFE0 [Dynatrace: simply smarter](#dashboard;gf=all;id=bbbbbbbb-a001-a017-0000-000000000001)\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1102,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "##\uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n- ✅ [mobile apps](#dashboard;id=bbbbbbbb-a001-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a001-a017-0004-000000000001) \n- [visits↗](#usersearchoverview;filtrfilterAType=2) \n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "\uD83D\uDD0D [Services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n- [database services](#dashboard;id=88d133db-658c-4b58-b45a-be90034f5805) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a001-a017-0006-000000000001) \n- [analysis↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) \n "
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1634,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "\uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
+    }, {
+        "name": "\uD83D\uDEA6Health",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -75,18 +123,6 @@
         },
         "tileFilter": {},
         "chartVisible": true
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 1102,
-            "width": 608,
-            "height": 190
-        },
-        "tileFilter": {},
-        "markdown": "## [\uD83C\uDFE0 Accueil - Tableaux de bord](#dashboard;gf=all;id=e7abd417-f82f-4fe9-b8f6-f17a33243228)\n\n- [Experience utilisateur Web](#dashboard;id=9bf23d39-5f0f-433c-9445-f1fc1989471c)  / ✔ [Mobile](#dashboard;id=8c39e2a3-c7fb-4a28-85a0-80cff5c377ae) /  [Tests synthétiques](#dashboard;id=1600d6da-5ca2-4e23-8060-9f431f239855)  (browser)\n\n- [Services](#dashboard;id=87e1ef3f-cfb7-4d14-9570-d9c2bac27590) / [Base de données](#dashboard;id=9201ce03-bf4e-4ebc-aedb-1bf54c8436da) / [Tests synthétiques](#dashboard;id=5b5ed659-74f2-405b-b017-27cf37e3da6d) \n (service)\n\n- [Infrastructure](#dashboard;id=d2f0ff9c-8cfd-4dea-ba92-377c56fdf0d6)\n##[Visites↗](#usersearchoverview) "
     }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
@@ -199,7 +235,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Actions utilisateurs",
+        "name": "User actions",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -210,7 +246,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Temps de réponse",
+        "name": "Reponse time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -221,7 +257,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Erreurs",
+        "name": "Errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -322,7 +358,7 @@
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Experience utilisateur",
+        "name": "User experience",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -333,7 +369,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Temps de réponse",
+        "name": "Response time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -344,7 +380,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Actions utilisateur > à 12 sec",
+        "name": "Top user actions > 12 sec",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -379,7 +415,7 @@
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Actions utilisateur en erreur",
+        "name": "Top user actions with erreor",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -502,7 +538,7 @@
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Détail des visites",
+        "name": "Details",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -549,7 +585,7 @@
         "tileFilter": {},
         "markdown": "----"
     }, {
-        "name": "Experience utilisateur",
+        "name": "User experience",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -853,24 +889,6 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1710,
-            "left": 342,
-            "width": 646,
-            "height": 304
-        },
-        "tileFilter": {},
-        "customName": "Visites par jour",
-        "query": "SELECT DISTINCT DATETIME(starttime, 'E') as \"Jour\", count(*) as \"Visites\" FROM usersession WHERE usersession.applicationType = \"MOBILE_APPLICATION\" ORDER BY count(*) DESC",
-        "type": "COLUMN_CHART",
-        "visualizationConfig": {
-            "hasAxisBucketing": true
-        },
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
             "top": 304,
             "left": 418,
             "width": 266,
@@ -976,7 +994,7 @@
         "bounds": {
             "top": 1710,
             "left": 1330,
-            "width": 684,
+            "width": 380,
             "height": 304
         },
         "tileFilter": {},
@@ -1032,8 +1050,8 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2014,
-            "left": 0,
+            "top": 1710,
+            "left": 342,
             "width": 342,
             "height": 304
         },
@@ -1069,8 +1087,8 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2014,
-            "left": 1026,
+            "top": 1710,
+            "left": 1710,
             "width": 304,
             "height": 304
         },
@@ -1123,71 +1141,13 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 2014,
-            "left": 1330,
-            "width": 684,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "Requests response times",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "builtin:apps.other.requestTimes.osAndProvider",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
-                    "dimensions": [{
-                        "id": "3",
-                        "name": "Provider",
-                        "values": [],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "nullbuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-                        "lastModified": 1609943617923,
-                        "customColor": "#ff0000"
-                    },
-                    "nullbuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-                        "lastModified": 1609946483330,
-                        "customColor": "#ffd0ab"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1605717914829,
-                        "customColor": "#ef651f"
-                    },
-                    "null¦Provider»cdn-mousquetaires.com»falsebuiltin:apps.other.requestTimes.osAndProvider|AVG|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-                        "lastModified": 1609946489713,
-                        "customColor": "#7c38a1"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1605718015774,
-                        "customColor": "#ef651f"
-                    }
-                }
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2014,
-            "left": 342,
-            "width": 646,
+            "top": 1710,
+            "left": 684,
+            "width": 304,
             "height": 304
         },
         "tileFilter": {},

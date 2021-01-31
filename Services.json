@@ -1,9 +1,9 @@
 {
     "metadata": {
         "configurationVersions": [3],
-        "clusterVersion": "1.208.93.20210111-080850"
+        "clusterVersion": "1.209.98.20210122-102634"
     },
-    "id": "87e1ef3f-cfb7-4d14-9570-d9c2bac27590",
+    "id": "bbbbbbbb-a001-a017-0001-000000000001",
     "dashboardMetadata": {
         "name": "✔ Services",
         "shared": true,
@@ -12,9 +12,57 @@
             "linkShared": false,
             "published": true
         },
-        "tags": ["auto", "accueil"]
+        "tags": ["smarter"]
     },
     "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1406,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "\uD83C\uDFE0 [Dynatrace: simply smarter](#dashboard;gf=all;id=bbbbbbbb-a001-a017-0000-000000000001)\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1102,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "\uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a001-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a001-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "##\uD83D\uDD0D [Services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n***\n\n- ✅ [services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n- [database services](#dashboard;id=88d133db-658c-4b58-b45a-be90034f5805) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a001-a017-0006-000000000001) \n- [analysis↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) \n "
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1634,
+            "width": 266,
+            "height": 190
+        },
+        "tileFilter": {},
+        "markdown": "\uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
+    }, {
         "name": "Problems",
         "tileType": "OPEN_PROBLEMS",
         "configured": true,
@@ -50,7 +98,7 @@
         "tileFilter": {},
         "chartVisible": true
     }, {
-        "name": "Temps de réponse",
+        "name": "Response time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -61,7 +109,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "\uD83D\uDEA6Etat de santé",
+        "name": "\uD83D\uDEA6Health",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -119,11 +167,11 @@
         "tileFilter": {},
         "markdown": "- - - "
     }, {
-        "name": "Erreurs 4xx",
+        "name": "HTTP 4xx errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 874,
+            "top": 1254,
             "left": 0,
             "width": 266,
             "height": 38
@@ -134,25 +182,13 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 1292,
             "left": 0,
             "width": 988,
             "height": 38
         },
         "tileFilter": {},
         "markdown": "- - - "
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 1102,
-            "width": 570,
-            "height": 190
-        },
-        "tileFilter": {},
-        "markdown": "## [\uD83C\uDFE0 Accueil - Tableaux de bord](#dashboard;gf=all;id=e7abd417-f82f-4fe9-b8f6-f17a33243228)\n\n- [Experience utilisateur Web](#dashboard;id=9bf23d39-5f0f-433c-9445-f1fc1989471c)  / [Mobile](#dashboard;id=8c39e2a3-c7fb-4a28-85a0-80cff5c377ae) /  [Tests synthétiques](#dashboard;id=1600d6da-5ca2-4e23-8060-9f431f239855)  (browser)\n\n- ✔ [Services](#dashboard;id=87e1ef3f-cfb7-4d14-9570-d9c2bac27590) / [Base de données](#dashboard;id=9201ce03-bf4e-4ebc-aedb-1bf54c8436da) / [Tests synthétiques](#dashboard;id=5b5ed659-74f2-405b-b017-27cf37e3da6d) \n (service)\n\n- [Infrastructure](#dashboard;id=d2f0ff9c-8cfd-4dea-ba92-377c56fdf0d6)\n##[Vue multidimensions↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) "
     }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
@@ -307,7 +343,11 @@
                 }],
                 "resultMetadata": {}
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["2"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -478,7 +518,7 @@
             }
         }
     }, {
-        "name": "Requêtes",
+        "name": "Requests",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -505,7 +545,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 1292,
             "left": 1026,
             "width": 988,
             "height": 38
@@ -517,7 +557,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 950,
+            "top": 1330,
             "left": 0,
             "width": 494,
             "height": 304
@@ -554,7 +594,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 950,
+            "top": 1330,
             "left": 1026,
             "width": 494,
             "height": 304
@@ -587,11 +627,11 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Erreurs 5xx",
+        "name": "HTTP 5xx errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 874,
+            "top": 1254,
             "left": 1026,
             "width": 266,
             "height": 38
@@ -602,7 +642,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 1634,
             "left": 0,
             "width": 342,
             "height": 38
@@ -613,7 +653,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1292,
+            "top": 1672,
             "left": 0,
             "width": 988,
             "height": 38
@@ -625,7 +665,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 950,
+            "top": 1330,
             "left": 494,
             "width": 494,
             "height": 304
@@ -662,7 +702,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 950,
+            "top": 1330,
             "left": 1520,
             "width": 494,
             "height": 304
@@ -699,7 +739,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1330,
+            "top": 1710,
             "left": 342,
             "width": 646,
             "height": 304
@@ -736,7 +776,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1330,
+            "top": 1710,
             "left": 0,
             "width": 342,
             "height": 304
@@ -773,7 +813,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1330,
+            "top": 1710,
             "left": 1368,
             "width": 646,
             "height": 304
@@ -810,7 +850,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 1634,
             "left": 1026,
             "width": 342,
             "height": 38
@@ -821,7 +861,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1292,
+            "top": 1672,
             "left": 1026,
             "width": 988,
             "height": 38
@@ -833,7 +873,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1330,
+            "top": 1710,
             "left": 1026,
             "width": 342,
             "height": 304
@@ -937,7 +977,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Temps de réponse",
+        "name": "Response time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -948,7 +988,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Erreurs 4xx",
+        "name": "HTTP 4xx errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -959,7 +999,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Erreurs 5xx",
+        "name": "HTTP 5xx errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -1014,7 +1054,7 @@
         "tileFilter": {},
         "markdown": "- - - "
     }, {
-        "name": "Taux de succès %",
+        "name": "Success rate %",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -1029,7 +1069,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1710,
+            "top": 2090,
             "left": 342,
             "width": 646,
             "height": 304
@@ -1066,7 +1106,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1710,
+            "top": 2090,
             "left": 0,
             "width": 342,
             "height": 304
@@ -1103,7 +1143,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 1634,
+            "top": 2014,
             "left": 0,
             "width": 342,
             "height": 38
@@ -1114,7 +1154,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1710,
+            "top": 2090,
             "left": 1026,
             "width": 342,
             "height": 304
@@ -1151,7 +1191,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 1634,
+            "top": 2014,
             "left": 1026,
             "width": 342,
             "height": 38
@@ -1162,7 +1202,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1710,
+            "top": 2090,
             "left": 1368,
             "width": 646,
             "height": 304
@@ -1199,7 +1239,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2090,
+            "top": 2470,
             "left": 0,
             "width": 342,
             "height": 304
@@ -1236,7 +1276,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 2014,
+            "top": 2394,
             "left": 0,
             "width": 342,
             "height": 38
@@ -1247,7 +1287,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2090,
+            "top": 2470,
             "left": 342,
             "width": 646,
             "height": 304
@@ -1284,7 +1324,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2090,
+            "top": 2470,
             "left": 1026,
             "width": 342,
             "height": 304
@@ -1321,7 +1361,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 2014,
+            "top": 2394,
             "left": 1026,
             "width": 342,
             "height": 38
@@ -1332,7 +1372,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 2090,
+            "top": 2470,
             "left": 1368,
             "width": 646,
             "height": 304
@@ -1369,7 +1409,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1672,
+            "top": 2052,
             "left": 0,
             "width": 988,
             "height": 38
@@ -1381,7 +1421,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1672,
+            "top": 2052,
             "left": 1026,
             "width": 988,
             "height": 38
@@ -1393,7 +1433,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2052,
+            "top": 2432,
             "left": 0,
             "width": 988,
             "height": 38
@@ -1405,7 +1445,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2052,
+            "top": 2432,
             "left": 1026,
             "width": 988,
             "height": 38
@@ -1436,5 +1476,297 @@
             "filtersPerEntityType": {}
         },
         "chartVisible": true
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 0,
+            "width": 304,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Success rate % (down top)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.successes.server.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["1"]
+                }
+            }
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 304,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Success rate % (the worst)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:service.successes.server.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["1"]
+                }
+            }
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 646,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Success rate (time series)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.successes.server.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["1"]
+                }
+            }
+        }
+    }, {
+        "name": "Success rate (Web Requests)",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 0,
+            "width": 988,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "- - - "
+    }, {
+        "name": "Success rate (Web Services)",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 1026,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 1026,
+            "width": 988,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "- - - "
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1026,
+            "width": 304,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Success rate % (down top)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.successes.server.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["2"]
+                }
+            }
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1330,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Success rate % (the worst)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:service.successes.server.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["2"]
+                }
+            }
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1672,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Success rate (time series)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.successes.server.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["2"]
+                }
+            }
+        }
     }]
 }
