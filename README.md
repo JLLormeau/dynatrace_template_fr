@@ -3,21 +3,21 @@ Designed by Dynatrace France Services / ELA + JLL
 
 A set of dashboards for beginners or experts, designed to show the main KPI of your applications and services filtered on the management zone.
 ## Main Dashboard
-![Dynatrace_simply_smarter](Dynatrace_simply_smarter.PNG)
+![Dynatrace_simply_smarter](Dynatrace_simply_smarter.png)
 
 ## Application
-![Applications](Applications.PNG)
+![Applications](Applications.png)
 
 ## Synthetic
-![Synthetic](Synthetic.PNG)
+![Synthetic](Synthetic.png)
 
 ## Services
-![Services](Services.PNG)
+![Services](Services.png)
 
 ## Database
-![Database](Database.PNG)
+![Database](Database.png)
 
 ## Infrastructure
-![Infra](Infra.PNG)
+![Infra](Infra.png)
 
 and so more... :)
