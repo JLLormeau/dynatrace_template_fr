@@ -9,7 +9,7 @@ A set of dashboards for beginners or experts, designed to show the main KPI of y
 ![Applications](Applications2.png)
 
 ## Synthetic
-![Synthetic](Synthetic2.png)
+![Synthetic2](Synthetic2.png)
 
 ## Services
 ![Services](Services2.png)
