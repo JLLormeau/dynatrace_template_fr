@@ -6,18 +6,18 @@ A set of dashboards for beginners or experts, designed to show the main KPI of y
 ![Dynatrace_simply_smarter](Dynatrace_simply_smarter.png)
 
 ## Application
-![Applications](Applications.png)
+![Applications](Applications2.png)
 
 ## Synthetic
-![Synthetic](Synthetic.png)
+![Synthetic](Synthetic2.png)
 
 ## Services
-![Services](Services.png)
+![Services](Services2.png)
 
 ## Database
-![Database](Database.png)
+![Database](Database2.png)
 
 ## Infrastructure
-![Infra](Infra.png)
+![Infra](Infra2.png)
 
 and so more... :)
