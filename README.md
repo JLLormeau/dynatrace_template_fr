@@ -9,7 +9,7 @@ A set of dashboards for beginners or experts, designed to show the main KPI of y
 ![Applications](Applications.png)
 
 ## Synthetic
-![https://github.com/JLLormeau/dynatrace_template_fr/blob/main/Synthetic2.png](Synthetic2.png)
+![Synthetic](https://github.com/JLLormeau/dynatrace_template_fr/blob/main/Synthetic2.png)
 
 ## Services
 ![Services](Services.png)
