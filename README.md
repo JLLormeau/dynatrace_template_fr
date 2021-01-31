@@ -1,7 +1,7 @@
 # Dynatrace: simply smarter
 Designed by Dynatrace France Services / ELA + JLL
 
-A set of dashboards for beginner or expert designed to show the main KPI of your applications and services filtred on the management zone.
+A set of dashboards for beginners or experts, designed to show the main KPI of your applications and services filtered on the management zone.
 ## Main Dashboard
 ![Dynatrace_simply_smarter](Dynatrace_simply_smarter.PNG)
 
@@ -19,3 +19,5 @@ A set of dashboards for beginner or expert designed to show the main KPI of your
 
 ## Infrastructure
 ![Infra](Infra.PNG)
+
+and so more... :)
