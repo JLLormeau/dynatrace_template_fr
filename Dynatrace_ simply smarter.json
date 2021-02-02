@@ -394,7 +394,7 @@
             "height": 76
         },
         "tileFilter": {},
-        "markdown": "___\n## \uD83D\uDD0D [Services](#dashboard/dashboard;id=bbbbbbbb-a001-a017-0001-000000000001;gf=all)\n***\n\n- [Add here your service  (Service)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0001-000000000001)\n- [Add here your service synthetic (HTTP monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;dashboard;id=bbbbbbbb-a001-a017-0006-000000000001)"
+        "markdown": "___\n## \uD83D\uDD0D [Services](#dashboard/dashboard;id=bbbbbbbb-a001-a017-0001-000000000001)\n***\n\n- [Add here your service  (Service)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0001-000000000001)\n- [Add here your service synthetic (HTTP monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;dashboard;id=bbbbbbbb-a001-a017-0006-000000000001)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -406,7 +406,7 @@
             "height": 76
         },
         "tileFilter": {},
-        "markdown": "___\n## \uD83D\uDD0D [Digital experience](#dashboard;gf=all;id=bbbbbbbb-a001-a017-0002-000000000001)\n___\n\n\n- [Add here your web application (Rum)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0002-000000000001)\n- [Add here your Mobile app  (Mobile)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=;id=bbbbbbbb-a001-a017-0003-000000000001)\n- [Add here your asynthetic (Browser monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0004-000000000001)"
+        "markdown": "___\n## \uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n___\n\n\n- [Add here your web application (Rum)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0002-000000000001)\n- [Add here your Mobile app  (Mobile)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=;id=bbbbbbbb-a001-a017-0003-000000000001)\n- [Add here your asynthetic (Browser monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0004-000000000001)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -418,7 +418,7 @@
             "height": 76
         },
         "tileFilter": {},
-        "markdown": "___\n## \uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001;gf=all)\n____\n\n- [Add here your cloud infra application (Infra)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0007-000000000001)\n- [Add your custom plugin application (Techno)](#newprocessessummary;gf=TOMODIFYWITHYOUROWNMANAGEMNETID)"
+        "markdown": "___\n## \uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n____\n\n- [Add here your cloud infra application (Infra)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a001-a017-0007-000000000001)\n- [Add your custom plugin application (Techno)](#newprocessessummary;gf=TOMODIFYWITHYOUROWNMANAGEMNETID)"
     }, {
         "name": "Database health",
         "tileType": "DATABASES_OVERVIEW",
@@ -469,14 +469,18 @@
         "filterConfig": {
             "type": "WEB_CHECK",
             "customName": "Synthetic",
-            "defaultName": "Synthetic monitor",
+            "defaultName": "Active synthetic monitor",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [],
                 "resultMetadata": {}
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "WEB_CHECK": {
+                    "WEBCHECK_STATUS": ["Active"]
+                }
+            }
         },
         "chartVisible": true
     }, {

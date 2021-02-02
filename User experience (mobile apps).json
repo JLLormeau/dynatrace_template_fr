@@ -1219,14 +1219,18 @@
         "filterConfig": {
             "type": "WEB_CHECK",
             "customName": "Synthetic",
-            "defaultName": "Synthetic monitor",
+            "defaultName": "Active synthetic monitor",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [],
                 "resultMetadata": {}
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "WEB_CHECK": {
+                    "WEBCHECK_STATUS": ["Active"]
+                }
+            }
         },
         "chartVisible": true
     }]

@@ -806,7 +806,7 @@
         "filterConfig": {
             "type": "WEB_CHECK",
             "customName": "HTTP synthetic",
-            "defaultName": "HTTP synthetic monitor",
+            "defaultName": "HTTP Active synthetic monitor",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TIMESERIES",
@@ -815,7 +815,8 @@
             },
             "filtersPerEntityType": {
                 "WEB_CHECK": {
-                    "WEBCHECK_TYPE": ["Basic HTTP"]
+                    "WEBCHECK_TYPE": ["Basic HTTP"],
+                    "WEBCHECK_STATUS": ["Active"]
                 }
             }
         },

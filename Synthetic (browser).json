@@ -983,7 +983,7 @@
         "filterConfig": {
             "type": "WEB_CHECK",
             "customName": "Browser synthetic",
-            "defaultName": "Browser synthetic monitor",
+            "defaultName": "Active synthetic monitor",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TIMESERIES",
@@ -992,7 +992,7 @@
             },
             "filtersPerEntityType": {
                 "WEB_CHECK": {
-                    "WEBCHECK_TYPE": ["Availability"]
+                    "WEBCHECK_STATUS": ["Active"]
                 }
             }
         },
