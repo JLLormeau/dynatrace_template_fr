@@ -1,18 +1,18 @@
 {
     "metadata": {
         "configurationVersions": [3],
-        "clusterVersion": "1.209.98.20210122-102634"
+        "clusterVersion": "1.210.92.20210209-151321"
     },
-    "id": "bbbbbbbb-a001-a017-0007-000000000001",
+    "id": "bbbbbbbb-a003-a017-0007-000000000001",
     "dashboardMetadata": {
         "name": "✔ Infrastructure",
         "shared": true,
         "owner": "jean.louis.lormeau@dynatrace.com",
         "sharingDetails": {
-            "linkShared": false,
+            "linkShared": true,
             "published": true
         },
-        "tags": ["smarter"]
+        "tags": ["Configurator", "smarter"]
     },
     "tiles": [{
         "name": "Markdown",
@@ -25,7 +25,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "\uD83C\uDFE0 [Dynatrace: simply smarter](#dashboard;gf=all;id=bbbbbbbb-a001-a017-0000-000000000001)\n"
+        "markdown": "\uD83C\uDFE0 [Dynatrace: simply smarter](#dashboard;gf=all;id=bbbbbbbb-a003-a017-0000-000000000001)\n"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -37,7 +37,7 @@
             "height": 190
         },
         "tileFilter": {},
-        "markdown": "\uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a001-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a001-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a001-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n"
+        "markdown": "\uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -49,7 +49,7 @@
             "height": 190
         },
         "tileFilter": {},
-        "markdown": "\uD83D\uDD0D [Services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a001-a017-0001-000000000001) \n- [database services](#dashboard;id=88d133db-658c-4b58-b45a-be90034f5805) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a001-a017-0006-000000000001) \n- [analysis↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) \n "
+        "markdown": "\uD83D\uDD0D [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000001) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000001) \n- [analysis↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) \n "
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -61,7 +61,7 @@
             "height": 190
         },
         "tileFilter": {},
-        "markdown": "##\uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n***\n- ✅ [infrastructure](#dashboard;id=bbbbbbbb-a001-a017-0007-000000000001)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
+        "markdown": "##\uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- ✅ [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
     }, {
         "name": "Problems",
         "tileType": "OPEN_PROBLEMS",
@@ -846,18 +846,14 @@
         "filterConfig": {
             "type": "WEB_CHECK",
             "customName": "Synthetic",
-            "defaultName": "Active synthetic monitor",
+            "defaultName": "Synthetic monitor",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [],
                 "resultMetadata": {}
             },
-            "filtersPerEntityType": {
-                "WEB_CHECK": {
-                    "WEBCHECK_STATUS": ["Active"]
-                }
-            }
+            "filtersPerEntityType": {}
         },
         "chartVisible": true
     }, {
