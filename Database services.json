@@ -564,7 +564,7 @@
                 "type": "SINGLE_VALUE",
                 "series": [{
                     "metric": "builtin:service.dbconnections.successRate",
-                    "aggregation": "AVG",
+                    "aggregation": "NONE",
                     "type": "LINE",
                     "entityType": "SERVICE",
                     "dimensions": [],
@@ -724,7 +724,7 @@
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:service.dbconnections.successRate",
-                    "aggregation": "AVG",
+                    "aggregation": "NONE",
                     "type": "LINE",
                     "entityType": "SERVICE",
                     "dimensions": [{
@@ -761,7 +761,7 @@
                 "type": "TOP_LIST",
                 "series": [{
                     "metric": "builtin:service.dbconnections.successRate",
-                    "aggregation": "AVG",
+                    "aggregation": "NONE",
                     "type": "LINE",
                     "entityType": "SERVICE",
                     "dimensions": [{
