@@ -9,11 +9,7 @@
   "dashboardMetadata": {
     "name": "Dynatrace: simply smarter",
     "shared": true,
-    "owner": "admin",
-    "sharingDetails": {
-            "linkShared": true,
-            "published": true
-        },	
+    "owner": "jean.louis.lormeau@dynatrace.com",
     "dashboardFilter": {
       "timeframe": "-2h"
     },
