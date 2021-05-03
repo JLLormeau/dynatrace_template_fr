@@ -7,7 +7,7 @@
   },
   "id": "bbbbbbbb-a003-a017-0000-000000000001",
   "dashboardMetadata": {
-    "name": "\uD83C\uDFE0 Dynatrace: simply smarter",
+    "name": "Dynatrace: simply smarter",
     "shared": true,
     "owner": "jean.louis.lormeau@dynatrace.com",
     "dashboardFilter": {
@@ -95,7 +95,7 @@
       }
     },
     {
-      "name": "🚦Health",
+      "name": "Health",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -179,7 +179,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000001)\n***\n\n- [Add here your service  (Service)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0001-000000000001)\n- [Add here your service synthetic (HTTP monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;dashboard;id=bbbbbbbb-a003-a017-0006-000000000001)"
+      "markdown": "___\n##[Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000001)\n***\n\n- [Add here your service  (Service)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0001-000000000001)\n- [Add here your service synthetic (HTTP monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;dashboard;id=bbbbbbbb-a003-a017-0006-000000000001)"
     },
     {
       "name": "Markdown",
@@ -192,7 +192,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n___\n\n\n- [Add here your web application (Rum)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [Add here your Mobile app  (Mobile)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [Add here your asynthetic (Browser monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0004-000000000001)"
+      "markdown": "___\n##  [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n___\n\n\n- [Add here your web application (Rum)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [Add here your Mobile app  (Mobile)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [Add here your asynthetic (Browser monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0004-000000000001)"
     },
     {
       "name": "Markdown",
@@ -205,7 +205,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n____\n\n- [Add here your cloud infra application (Infra)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [Add your custom plugin application (Techno)](#newprocessessummary;gf=TOMODIFYWITHYOUROWNMANAGEMNETID)"
+      "markdown": "___\n##  [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n____\n\n"
     },
     {
       "name": "Database health",
@@ -244,7 +244,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Dashbaords↗](ui/dashboards?gtf=-2h&gf=all)\n____\n"
+      "markdown": "___\n##  [Dashbaords↗](ui/dashboards?gtf=-2h&gf=all)\n____\n"
     },
     {
       "name": "",
