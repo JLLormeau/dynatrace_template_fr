@@ -107,18 +107,6 @@
       "tileFilter": {}
     },
     {
-      "name": "🙎‍ User Experience",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1026,
-        "width": 266,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
       "name": "🚨 Availability",
       "tileType": "HEADER",
       "configured": true,
