@@ -107,7 +107,7 @@
       "tileFilter": {}
     },
     {
-      "name": "🙎‍♂️ User Experience",
+      "name": "User Experience",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -119,7 +119,7 @@
       "tileFilter": {}
     },
     {
-      "name": "🚨 Availability",
+      "name": "Availability",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -131,7 +131,7 @@
       "tileFilter": {}
     },
     {
-      "name": "➵ Services",
+      "name": "Services",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
