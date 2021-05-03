@@ -119,7 +119,7 @@
       "tileFilter": {}
     },
     {
-      "name": " 🚨 Availability",
+      "name": "🚨 Availability",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
