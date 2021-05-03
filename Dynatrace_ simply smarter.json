@@ -1,0 +1,301 @@
+ {
+  "metadata": {
+    "configurationVersions": [
+      3
+    ],
+    "clusterVersion": "1.216.103.20210429-182127"
+  },
+  "id": "bbbbbbbb-a003-a017-0000-000000000002",
+  "dashboardMetadata": {
+    "name": "🏠 Dynatrace: simply smarter",
+    "shared": true,
+    "owner": "jean.louis.lormeau@dynatrace.com",
+    "dashboardFilter": {
+      "timeframe": "-2h"
+    },
+    "tags": [
+      "Configurator",
+      "smarter"
+    ]
+  },
+  "tiles": [
+    {
+      "name": "Problems",
+      "tileType": "OPEN_PROBLEMS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "🚦Health",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 380,
+        "width": 342,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Application health",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 152,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Service health",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 456,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 494,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "___\n## 🔍 [Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000002)\n***\n\n- [Add here your service  (Service)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0001-000000000002)\n- [Add here your service synthetic (HTTP monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;dashboard;id=bbbbbbbb-a003-a017-0006-000000000002)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 38,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "___\n## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n___\n\n\n- [Add here your web application (Rum)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0002-000000000002)\n- [Add here your Mobile app  (Mobile)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=;id=bbbbbbbb-a003-a017-0003-000000000002)\n- [Add here your asynthetic (Browser monitor)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0004-000000000002)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 950,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "___\n## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n____\n\n- [Add here your cloud infra application (Infra)](#dashboard;gf=TOMODIFYWITHYOUROWNMANAGEMNETID;id=bbbbbbbb-a003-a017-0007-000000000002)\n- [Add your custom plugin application (Techno)](#newprocessessummary;gf=TOMODIFYWITHYOUROWNMANAGEMNETID)"
+    },
+    {
+      "name": "Database health",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 608,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Host health",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 760,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1406,
+        "width": 380,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "___\n## 🔍 [Dashbaords↗](ui/dashboards?gtf=-2h&gf=all)\n____\n"
+    },
+    {
+      "name": "",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 304,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "WEB_CHECK",
+        "customName": "Synthetic",
+        "defaultName": "Synthetic monitor",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "World map",
+      "tileType": "APPLICATION_WORLDMAP",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 76,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "assignedEntities": [
+        "GEOLOCATION-0000000000000000",
+        "WORLD"
+      ],
+      "metric": "APDEX"
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 988,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "CPU usage %",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.cpu.usage",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Smartscape",
+      "tileType": "PURE_MODEL",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1444,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Network status",
+      "tileType": "NETWORK_MEDIUM",
+      "configured": true,
+      "bounds": {
+        "top": 456,
+        "left": 1444,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 532,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Request count (sum)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:service.requestCount.total",
+              "aggregation": "NONE",
+              "type": "BAR",
+              "entityType": "SERVICE",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.service",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    }
+  ]
+}
