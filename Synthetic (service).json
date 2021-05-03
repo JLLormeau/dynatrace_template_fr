@@ -1,892 +1,991 @@
-{
-    "metadata": {
-        "configurationVersions": [3],
-        "clusterVersion": "1.210.92.20210209-151321"
-    },
-    "id": "bbbbbbbb-a003-a017-0006-000000000001",
-    "dashboardMetadata": {
-        "name": "✔ Synthetic (service)",
-        "shared": true,
-        "owner": "admin",
-        "sharingDetails": {
+ {
+  "metadata": {
+    "configurationVersions": [
+      3
+    ],
+    "clusterVersion": "1.216.103.20210429-182127"
+  },
+  "id": "bbbbbbbb-a003-a017-0006-000000000001",
+  "dashboardMetadata": {
+    "name": "✔ Synthetic (service)",
+    "shared": true,
+    "owner": "jean.louis.lormeau@dynatrace.com",
+	"sharingDetails": {
             "linkShared": true,
             "published": true
         },
-        "dashboardFilter": {
-            "timeframe": "today"
-        },
-        "tags": ["Configurator", "smarter"]
+    "dashboardFilter": {
+      "timeframe": "today"
     },
-    "tiles": [{
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 1406,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "\uD83C\uDFE0 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000001)\n"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1102,
-            "width": 266,
-            "height": 190
-        },
-        "tileFilter": {},
-        "markdown": "\uD83D\uDD0D [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1368,
-            "width": 266,
-            "height": 190
-        },
-        "tileFilter": {},
-        "markdown": "##\uD83D\uDD0D [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000001) \n- ✅ [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000001) \n- [analysis↗](/ui/diagnostictools/mda?gtf=-2h&mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN) \n "
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1634,
-            "width": 266,
-            "height": 190
-        },
-        "tileFilter": {},
-        "markdown": "\uD83D\uDD0D [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
-    }, {
-        "name": "\uD83D\uDEA6Health",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 570,
-            "width": 228,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Problems",
-        "tileType": "OPEN_PROBLEMS",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 76,
-            "width": 152,
-            "height": 152
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Application health",
-        "tileType": "APPLICATIONS",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 228,
-            "width": 152,
-            "height": 152
-        },
-        "tileFilter": {},
-        "chartVisible": true
-    }, {
-        "name": "Service health",
-        "tileType": "SERVICES",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 532,
-            "width": 152,
-            "height": 152
-        },
-        "tileFilter": {},
-        "chartVisible": true
-    }, {
-        "name": "Database health",
-        "tileType": "DATABASES_OVERVIEW",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 684,
-            "width": 152,
-            "height": 152
-        },
-        "tileFilter": {},
-        "chartVisible": true
-    }, {
-        "name": "Host health",
-        "tileType": "HOSTS",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 836,
-            "width": 152,
-            "height": 152
-        },
-        "tileFilter": {},
-        "chartVisible": true
-    }, {
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 950,
-            "left": 0,
-            "width": 266,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:synthetic.http.statusCode",
-                    "aggregation": "NONE",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "2",
-                        "name": "Status code",
-                        "values": [],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1605717914829,
-                        "customColor": "#ef651f"
-                    },
-                    "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
-                        "lastModified": 1609940710337,
-                        "customColor": "#00ff00"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1605718015774,
-                        "customColor": "#ef651f"
-                    }
+    "tags": [
+      "Configurator",
+      "smarter"
+    ]
+  },
+  "tiles": [
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1406,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000001)\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1102,
+        "width": 266,
+        "height": 190
+      },
+      "tileFilter": {},
+      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) \n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1368,
+        "width": 266,
+        "height": 190
+      },
+      "tileFilter": {},
+      "markdown": "##🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000001) \n- ✅ [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000001) \n- [slow requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%111000000%144611686018427387) \n- [failed requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110)\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1634,
+        "width": 266,
+        "height": 190
+      },
+      "tileFilter": {},
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [hosts↗](#newhosts)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)es)"
+    },
+    {
+      "name": "🚦Health",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 570,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Problems",
+      "tileType": "OPEN_PROBLEMS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 76,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Application health",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 228,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Service health",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 532,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Database health",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 684,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Host health",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 836,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 0,
+        "width": 266,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.statusCode",
+              "aggregation": "NONE",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "2",
+                  "name": "Status code",
+                  "values": [],
+                  "entityDimension": false
                 }
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 0,
-            "width": 988,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "Number of tests",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 418,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Response time",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 722,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "HTTP errors",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 1026,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 1026,
-            "width": 988,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 266,
-            "left": 722,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "Availability",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 494,
-            "left": 0,
-            "width": 494,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Availability by geolocation",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 494,
-            "left": 1026,
-            "width": 494,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 912,
-            "left": 0,
-            "width": 988,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "HTTP errors",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 874,
-            "left": 0,
-            "width": 494,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 266,
-            "left": 418,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 266,
-            "left": 1026,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "Availability",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 114,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 266,
-            "left": 114,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 304,
-            "left": 114,
-            "width": 266,
-            "height": 152
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "HTTP monitors",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.http_check",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 570,
-            "left": 0,
-            "width": 342,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.http_check",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 570,
-            "left": 342,
-            "width": 646,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.http_check",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 950,
-            "left": 1368,
-            "width": 646,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "builtin:synthetic.http.duration.geo",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.http_check",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Response time",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 874,
-            "left": 1026,
-            "width": 494,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 912,
-            "left": 1026,
-            "width": 988,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "----"
-    }, {
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 950,
-            "left": 266,
-            "width": 722,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "builtin:synthetic.http.statusCode",
-                    "aggregation": "NONE",
-                    "type": "AREA",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "2",
-                        "name": "Status code",
-                        "values": [],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|AREA|SYNTHETIC_HTTPCHECK": {
-                        "lastModified": 1609940767321,
-                        "customColor": "#00ff00"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1605717914829,
-                        "customColor": "#ef651f"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1605718015774,
-                        "customColor": "#ef651f"
-                    }
-                }
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 304,
-            "left": 418,
-            "width": 266,
-            "height": 152
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "HTTP monitor",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:billing.synthetic.requests",
-                    "aggregation": "NONE",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 304,
-            "left": 722,
-            "width": 266,
-            "height": 152
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "HTTP monitor",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:synthetic.http.duration.geo",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 570,
-            "left": 1026,
-            "width": 342,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "dt.entity.synthetic_location",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 570,
-            "left": 1368,
-            "width": 646,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "dt.entity.synthetic_location",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 950,
-            "left": 1026,
-            "width": 342,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:synthetic.http.duration.geo",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.http_check",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 304,
-            "left": 1026,
-            "width": 266,
-            "height": 152
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "HTTP errors (sum)",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:synthetic.http.statusCode",
-                    "aggregation": "NONE",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [{
-                        "id": "2",
-                        "name": "Status code",
-                        "values": ["SC_4xx", "SC_5xx"],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1605717914829,
-                        "customColor": "#ef651f"
-                    },
-                    "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
-                        "lastModified": 1609940710337,
-                        "customColor": "#00ff00"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1605718015774,
-                        "customColor": "#ef651f"
-                    }
-                }
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "",
-        "tileType": "SYNTHETIC_TESTS",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 380,
-            "width": 152,
-            "height": 190
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "WEB_CHECK",
-            "customName": "HTTP synthetic",
-            "defaultName": "HTTP synthetic monitor",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {
-                "WEB_CHECK": {
-                    "WEBCHECK_TYPE": ["Basic HTTP"]
-                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
             }
-        },
-        "chartVisible": true
-    }, {
-        "name": "Response size",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 1330,
-            "width": 266,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 304,
-            "left": 1330,
-            "width": 266,
-            "height": 152
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "Response size (Average)",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:synthetic.http.responseSize.geo",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "SYNTHETIC_HTTPCHECK",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1605717914829,
-                        "customColor": "#ef651f"
-                    },
-                    "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
-                        "lastModified": 1609940710337,
-                        "customColor": "#00ff00"
-                    },
-                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1605718015774,
-                        "customColor": "#ef651f"
-                    }
-                }
+          ],
+          "resultMetadata": {
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+              "lastModified": 1605717914829,
+              "customColor": "#ef651f"
             },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 266,
-            "left": 1330,
-            "width": 266,
-            "height": 38
+            "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
+              "lastModified": 1609940710337,
+              "customColor": "#00ff00"
+            },
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
+              "lastModified": 1605718015774,
+              "customColor": "#ef651f"
+            }
+          }
         },
-        "tileFilter": {},
-        "markdown": "----"
-    }]
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 0,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "Number of tests",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 418,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Response time",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 722,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "HTTP errors",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1026,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 1026,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 722,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "Availability",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 0,
+        "width": 494,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Availability by geolocation",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 1026,
+        "width": 494,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 0,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "HTTP errors",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 874,
+        "left": 0,
+        "width": 494,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 418,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 1026,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "Availability",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 114,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 114,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 114,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "HTTP monitors",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.http_check",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 0,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.http_check",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 342,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
+              "aggregation": "AVG",
+              "type": "AREA",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.http_check",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1368,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.duration.geo",
+              "aggregation": "AVG",
+              "type": "AREA",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.http_check",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Response time",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 874,
+        "left": 1026,
+        "width": 494,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 1026,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    },
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 266,
+        "width": 722,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.statusCode",
+              "aggregation": "NONE",
+              "type": "AREA",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "2",
+                  "name": "Status code",
+                  "values": [],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|AREA|SYNTHETIC_HTTPCHECK": {
+              "lastModified": 1609940767321,
+              "customColor": "#00ff00"
+            },
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+              "lastModified": 1605717914829,
+              "customColor": "#ef651f"
+            },
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
+              "lastModified": 1605718015774,
+              "customColor": "#ef651f"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 418,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "HTTP monitor",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:billing.synthetic.requests",
+              "aggregation": "NONE",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 722,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "HTTP monitor",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.duration.geo",
+              "aggregation": "AVG",
+              "type": "AREA",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1026,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "1",
+                  "name": "dt.entity.synthetic_location",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1368,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow",
+              "aggregation": "AVG",
+              "type": "AREA",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "1",
+                  "name": "dt.entity.synthetic_location",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1026,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": " ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.duration.geo",
+              "aggregation": "AVG",
+              "type": "AREA",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.http_check",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1026,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "HTTP errors (sum)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.statusCode",
+              "aggregation": "NONE",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [
+                {
+                  "id": "2",
+                  "name": "Status code",
+                  "values": [
+                    "SC_4xx",
+                    "SC_5xx"
+                  ],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+              "lastModified": 1605717914829,
+              "customColor": "#ef651f"
+            },
+            "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
+              "lastModified": 1609940710337,
+              "customColor": "#00ff00"
+            },
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
+              "lastModified": 1605718015774,
+              "customColor": "#ef651f"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 380,
+        "width": 152,
+        "height": 190
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "WEB_CHECK",
+        "customName": "HTTP synthetic",
+        "defaultName": "HTTP synthetic monitor",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "WEB_CHECK": {
+            "WEBCHECK_TYPE": [
+              "Basic HTTP"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Response size",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1330,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1330,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Response size (Average)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:synthetic.http.responseSize.geo",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "SYNTHETIC_HTTPCHECK",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+              "lastModified": 1605717914829,
+              "customColor": "#ef651f"
+            },
+            "null¦Status code»SC_2xx»falsebuiltin:synthetic.http.statusCode|NONE|TOTAL|LINE|SYNTHETIC_HTTPCHECK": {
+              "lastModified": 1609940710337,
+              "customColor": "#00ff00"
+            },
+            "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrorsDuringUserActions|NONE|TOTAL|AREA|APPLICATION": {
+              "lastModified": 1605718015774,
+              "customColor": "#ef651f"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 1330,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "----"
+    }
+  ]
 }
