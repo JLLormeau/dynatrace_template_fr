@@ -296,7 +296,7 @@
       "tileFilter": {}
     },
     {
-      "name": "Hosts",
+      "name": "CPU",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
