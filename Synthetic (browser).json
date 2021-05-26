@@ -644,7 +644,7 @@
       "tileFilter": {},
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Tests échoués",
+        "customName": "Failed tests",
         "defaultName": "Custom chart",
         "chartConfig": {
           "legendShown": true,
@@ -743,7 +743,7 @@
       },
       "tileFilter": {},
       "customName": "Browser monitor",
-      "query": "select count(*) as \"Erreurs HTTP & JavaScript\"  from useraction where errorCount >=1  and usersession.userType = \"SYNTHETIC\"",
+      "query": "select count(*) as \"Erreurs HTTP & JavaScript\"  from useraction where javaScriptErrorCount >=1 or requestErrorCount  >=1 and usersession.userType = \"SYNTHETIC\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -912,7 +912,7 @@
       "tileFilter": {},
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Tests réussis / échoués",
+        "customName": "Tests : Successful / Failed",
         "defaultName": "Custom chart",
         "chartConfig": {
           "legendShown": true,
