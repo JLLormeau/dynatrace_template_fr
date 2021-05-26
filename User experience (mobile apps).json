@@ -457,7 +457,7 @@
       "markdown": "----"
     },
     {
-      "name": "Top user actions with erreor",
+      "name": "Top user actions with error",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -898,7 +898,7 @@
       },
       "tileFilter": {},
       "customName": " Top user actions with error",
-      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useraction where  errorCount >= 1 AND usersession.applicationType = \"MOBILE_APPLICATION\" GROUP BY useraction.name, application ORDER BY  count(*) DESC",
+      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useraction where  requestErrorCount  >= 1 AND usersession.applicationType = \"MOBILE_APPLICATION\" GROUP BY useraction.name, application ORDER BY  count(*) DESC",
       "type": "TABLE",
       "timeFrameShift": "-1d",
       "limit": 50
@@ -1029,8 +1029,8 @@
         "height": 152
       },
       "tileFilter": {},
-      "customName": " Errors HTTP & Javascript",
-      "query": "select count(*) as \" \"  from useraction where errorCount >=1  AND usersession.applicationType = \"MOBILE_APPLICATION\"",
+      "customName": " Errors HTTP",
+      "query": "select count(*) as \" \"  from useraction where requestErrorCount  >=1  AND usersession.applicationType = \"MOBILE_APPLICATION\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
