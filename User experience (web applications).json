@@ -896,7 +896,7 @@
       },
       "tileFilter": {},
       "customName": " Errors HTTP & Javascript",
-      "query": "select count(*) as \" \"  from useraction where errorCount >=1 ",
+      "query": "select count(*) as \" \"  from useraction where javaScriptErrorCount >=1 or requestErrorCount >=1 ",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1110,8 +1110,8 @@
         "height": 304
       },
       "tileFilter": {},
-      "customName": " Top user actions with error",
-      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useraction where  errorCount >= 1 GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
+      "customName": "Top user actions with error (javascript or http)",
+      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useractionwhere javaScriptErrorCount >=1 or requestErrorCount >=1 GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
       "type": "TABLE",
       "timeFrameShift": "dynamic",
       "limit": 50
