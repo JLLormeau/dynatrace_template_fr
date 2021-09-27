@@ -1,5 +1,6 @@
 # Dynatrace: simply smarter
 Designed by Dynatrace France Services / ELA + JLL
+Latest update : 2021/09/27
 
 A set of dashboards for beginners or experts, designed to show the main KPI of your applications and services filtered on the management zone.
 ## Main Dashboard
