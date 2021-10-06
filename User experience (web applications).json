@@ -16,7 +16,8 @@
     "tags": [
       "Configurator",
       "smarter"
-    ]
+    ],
+    "preset": true
   },
   "tiles": [
     {
