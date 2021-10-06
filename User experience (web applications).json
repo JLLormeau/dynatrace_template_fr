@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "✔ User experience (web applications)",
     "shared": true,
-    "owner": "jean.louis.lormeau@dynatrace.com",
+    "owner": "admin",
     "dashboardFilter": {
       "timeframe": "today"
     },

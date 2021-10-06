@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "✔ Infrastructure",
     "shared": true,
-    "owner": "jean.louis.lormeau@dynatrace.com",
+    "owner": "admin",
     "tags": [
       "Configurator",
       "smarter"
