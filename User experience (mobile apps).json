@@ -1,23 +1,20 @@
- {
+{
   "metadata": {
     "configurationVersions": [
-      5
+      6
     ],
-    "clusterVersion": "1.226.91.20210918-122217"
+    "clusterVersion": "1.239.178.20220419-195605"
   },
   "id": "bbbbbbbb-a003-a017-0003-000000000001",
   "dashboardMetadata": {
     "name": "✔ User experience (mobile apps)",
     "shared": true,
-    "owner": "admin",
-    "dashboardFilter": {
-      "timeframe": "today"
-    },
+    "owner": "jean.louis.lormeau@dynatrace.com",
     "tags": [
- 
+      "Configurator",
       "smarter"
     ],
-    "preset": true
+    "popularity": 1
   },
   "tiles": [
     {
@@ -44,7 +41,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "##🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- ✅ [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
+      "markdown": "## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- ✅ [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
     },
     {
       "name": "Markdown",
@@ -70,7 +67,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [hosts↗](#newhosts)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)s)"
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "🚦Health",
@@ -86,6 +83,7 @@
     },
     {
       "name": "Problems",
+      "nameSize": "small",
       "tileType": "OPEN_PROBLEMS",
       "configured": true,
       "bounds": {
@@ -98,6 +96,7 @@
     },
     {
       "name": "Service health",
+      "nameSize": "small",
       "tileType": "SERVICES",
       "configured": true,
       "bounds": {
@@ -111,6 +110,7 @@
     },
     {
       "name": "Database health",
+      "nameSize": "small",
       "tileType": "DATABASES_OVERVIEW",
       "configured": true,
       "bounds": {
@@ -124,6 +124,7 @@
     },
     {
       "name": "Host health",
+      "nameSize": "small",
       "tileType": "HOSTS",
       "configured": true,
       "bounds": {
@@ -208,77 +209,6 @@
       },
       "tileFilter": {},
       "markdown": "----"
-    },
-    {
-      "name": "",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 114,
-        "width": 266,
-        "height": 152
-      },
-      "tileFilter": {},
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "ApdexCategory",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:apps.other.uaCount.geoAndApdex",
-              "aggregation": "NONE",
-              "type": "AREA",
-              "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
-              "dimensions": [
-                {
-                  "id": "2",
-                  "name": "Apdex category",
-                  "values": [],
-                  "entityDimension": false
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-              "lastModified": 1609942266271,
-              "customColor": "#ff0000"
-            },
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637039955,
-              "customColor": "#f5d30f"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-              "lastModified": 1609942251608,
-              "customColor": "#008000"
-            },
-            "APPLICATION-5789829428ED1125¦APPLICATION»APPLICATION-5789829428ED1125»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿APPLICATIONɵtrue¿¿¿Error typeɵfalse": {
-              "lastModified": 1585130890449,
-              "customColor": "#b4e5f9"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605636989629,
-              "customColor": "#008000"
-            },
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-              "lastModified": 1609942259016,
-              "customColor": "#f5d30f"
-            },
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637032456,
-              "customColor": "#FF0000"
-            }
-          }
-        },
-        "filtersPerEntityType": {}
-      }
     },
     {
       "name": "Markdown",
@@ -507,77 +437,6 @@
       "markdown": "----"
     },
     {
-      "name": "",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 570,
-        "left": 0,
-        "width": 988,
-        "height": 304
-      },
-      "tileFilter": {},
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "ApdexCategory",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TIMESERIES",
-          "series": [
-            {
-              "metric": "builtin:apps.other.uaCount.geoAndApdex",
-              "aggregation": "NONE",
-              "type": "AREA",
-              "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
-              "dimensions": [
-                {
-                  "id": "2",
-                  "name": "Apdex category",
-                  "values": [],
-                  "entityDimension": false
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-              "lastModified": 1609942266271,
-              "customColor": "#ff0000"
-            },
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637039955,
-              "customColor": "#f5d30f"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-              "lastModified": 1609942251608,
-              "customColor": "#008000"
-            },
-            "APPLICATION-5789829428ED1125¦APPLICATION»APPLICATION-5789829428ED1125»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿APPLICATIONɵtrue¿¿¿Error typeɵfalse": {
-              "lastModified": 1585130890449,
-              "customColor": "#b4e5f9"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605636989629,
-              "customColor": "#008000"
-            },
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
-              "lastModified": 1609942259016,
-              "customColor": "#f5d30f"
-            },
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637032456,
-              "customColor": "#FF0000"
-            }
-          }
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
       "name": "Crashs",
       "tileType": "HEADER",
       "configured": true,
@@ -601,40 +460,6 @@
       },
       "tileFilter": {},
       "markdown": "----"
-    },
-    {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 1330,
-        "left": 0,
-        "width": 988,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": " Top user actions > 12 sec",
-      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action > 12 s\"  FROM useraction where  visuallyCompleteTime > 12000  AND usersession.applicationType = \"MOBILE_APPLICATION\" GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
-      "type": "TABLE",
-      "timeFrameShift": "-1d",
-      "limit": 50
-    },
-    {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 1330,
-        "left": 1026,
-        "width": 988,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": " Top user actions with error",
-      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useraction where  requestErrorCount  >= 1 AND usersession.applicationType = \"MOBILE_APPLICATION\" GROUP BY useraction.name, application ORDER BY  count(*) DESC",
-      "type": "TABLE",
-      "timeFrameShift": "-1d",
-      "limit": 50
     },
     {
       "name": "User Sessions Query",
@@ -764,6 +589,7 @@
     },
     {
       "name": "",
+      "nameSize": "small",
       "tileType": "APPLICATIONS",
       "configured": true,
       "bounds": {
@@ -795,6 +621,7 @@
     },
     {
       "name": "",
+      "nameSize": "small",
       "tileType": "SYNTHETIC_TESTS",
       "configured": true,
       "bounds": {
@@ -849,30 +676,15 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -893,7 +705,30 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -920,16 +755,21 @@
       ],
       "visualConfig": {
         "type": "PIE_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -950,7 +790,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -977,16 +824,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "COLUMN"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1007,7 +859,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1034,16 +893,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1064,7 +928,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1091,30 +962,15 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "COLUMN"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1135,7 +991,30 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1169,16 +1048,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1199,7 +1083,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1226,16 +1117,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1256,7 +1152,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1283,30 +1186,15 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1327,7 +1215,30 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1354,16 +1265,21 @@
       ],
       "visualConfig": {
         "type": "PIE_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1384,7 +1300,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1411,30 +1334,15 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "COLUMN"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1455,8 +1363,221 @@
               "defaultAxis": true
             }
           ]
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      }
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 1330,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": " Top user actions > 12 sec",
+      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action > 12 s\"  FROM useraction where  visuallyCompleteTime > 12000  AND usersession.applicationType = \"MOBILE_APPLICATION\" GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 1330,
+        "left": 1026,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": " Top user actions with error",
+      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useraction where  requestErrorCount  >= 1 AND usersession.applicationType = \"MOBILE_APPLICATION\" GROUP BY useraction.name, application ORDER BY  count(*) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "ApdexCategory",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "enabled": true
         }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "ApdexCategory",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 114,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
       }
     }
-  ]
+  ],
+  "tilesNameSize": "small"
 }

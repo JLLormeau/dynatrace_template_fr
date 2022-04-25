@@ -1,27 +1,26 @@
- {
+{
   "metadata": {
     "configurationVersions": [
-      5
+      6
     ],
-    "clusterVersion": "1.226.91.20210918-122217"
+    "clusterVersion": "1.239.178.20220419-195605"
   },
   "id": "bbbbbbbb-a003-a017-0000-000000000001",
   "dashboardMetadata": {
     "name": "🏠 Dynatrace: simply smarter",
     "shared": true,
-    "owner": "admin",
-    "dashboardFilter": {
-      "timeframe": "-2h"
-    },
+    "owner": "jean.louis.lormeau@dynatrace.com",
     "tags": [
- 
+      "Configurator",
       "smarter"
     ],
-    "preset": true
+    "preset": true,
+    "popularity": 4
   },
   "tiles": [
     {
       "name": "Problems",
+      "nameSize": "small",
       "tileType": "OPEN_PROBLEMS",
       "configured": true,
       "bounds": {
@@ -81,7 +80,8 @@
       "tileFilter": {}
     },
     {
-      "name": "Application health",
+      "name": "Application",
+      "nameSize": "small",
       "tileType": "APPLICATIONS",
       "configured": true,
       "bounds": {
@@ -95,6 +95,7 @@
     },
     {
       "name": "Service health",
+      "nameSize": "small",
       "tileType": "SERVICES",
       "configured": true,
       "bounds": {
@@ -147,6 +148,7 @@
     },
     {
       "name": "Database health",
+      "nameSize": "small",
       "tileType": "DATABASES_OVERVIEW",
       "configured": true,
       "bounds": {
@@ -160,6 +162,7 @@
     },
     {
       "name": "Host health",
+      "nameSize": "small",
       "tileType": "HOSTS",
       "configured": true,
       "bounds": {
@@ -186,6 +189,7 @@
     },
     {
       "name": "",
+      "nameSize": "small",
       "tileType": "SYNTHETIC_TESTS",
       "configured": true,
       "bounds": {
@@ -211,6 +215,7 @@
     },
     {
       "name": "World map",
+      "nameSize": "small",
       "tileType": "APPLICATION_WORLDMAP",
       "configured": true,
       "bounds": {
@@ -228,6 +233,7 @@
     },
     {
       "name": "Smartscape",
+      "nameSize": "small",
       "tileType": "PURE_MODEL",
       "configured": true,
       "bounds": {
@@ -240,6 +246,7 @@
     },
     {
       "name": "Network status",
+      "nameSize": "small",
       "tileType": "NETWORK_MEDIUM",
       "configured": true,
       "bounds": {
@@ -251,66 +258,8 @@
       "tileFilter": {}
     },
     {
-      "name": "",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 1102,
-        "width": 152,
-        "height": 152
-      },
-      "tileFilter": {},
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "ApdexCategory",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:apps.web.actionCount.category",
-              "aggregation": "NONE",
-              "type": "AREA",
-              "entityType": "APPLICATION",
-              "dimensions": [
-                {
-                  "id": "1",
-                  "name": "Apdex category",
-                  "values": [],
-                  "entityDimension": false
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637039955,
-              "customColor": "#f5d30f"
-            },
-            "APPLICATION-5789829428ED1125¦APPLICATION»APPLICATION-5789829428ED1125»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿APPLICATIONɵtrue¿¿¿Error typeɵfalse": {
-              "lastModified": 1585130890449,
-              "customColor": "#b4e5f9"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605636989629,
-              "customColor": "#008000"
-            },
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637032456,
-              "customColor": "#FF0000"
-            }
-          }
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
       "name": "Real users",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -333,16 +282,21 @@
       ],
       "visualConfig": {
         "type": "SINGLE_VALUE",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -364,11 +318,19 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
-      "name": "browser monitor",
+      "name": "Browser monitor",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -396,16 +358,21 @@
       ],
       "visualConfig": {
         "type": "SINGLE_VALUE",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -427,11 +394,19 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
-      "name": "http monitor",
+      "name": "Http monitor",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -459,16 +434,21 @@
       ],
       "visualConfig": {
         "type": "SINGLE_VALUE",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -490,11 +470,19 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
       "name": "Success rate %",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -522,16 +510,21 @@
       ],
       "visualConfig": {
         "type": "SINGLE_VALUE",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -553,11 +546,19 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
-      "name": "HTTP 5xx",
+      "name": "Http 5xx",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -580,16 +581,21 @@
       ],
       "visualConfig": {
         "type": "SINGLE_VALUE",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -611,11 +617,19 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
       "name": "CPU usage %",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -645,16 +659,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "LINE"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -675,11 +694,19 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
       "name": "Request count (sum)",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -708,30 +735,15 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "COLUMN"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -752,8 +764,114 @@
               "defaultAxis": true
             }
           ]
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      }
+    },
+    {
+      "name": "ApdexCategory",
+      "nameSize": "small",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1102,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "enabled": true
         }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": [
+              {
+                "name": "SATISFIED",
+                "color": "#008000"
+              },
+              {
+                "name": "TOLERATING",
+                "color": "#f5d30f"
+              },
+              {
+                "name": "FRUSTRATED",
+                "color": "#FF0000"
+              }
+            ]
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
       }
     }
-  ]
+  ],
+  "tilesNameSize": "small"
 }

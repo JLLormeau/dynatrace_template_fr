@@ -1,23 +1,20 @@
- {
+{
   "metadata": {
     "configurationVersions": [
-      5
+      6
     ],
-    "clusterVersion": "1.226.91.20210918-122217"
+    "clusterVersion": "1.239.178.20220419-195605"
   },
   "id": "bbbbbbbb-a003-a017-0002-000000000001",
   "dashboardMetadata": {
     "name": "✔ User experience (web applications)",
     "shared": true,
-    "owner": "admin",
-    "dashboardFilter": {
-      "timeframe": "today"
-    },
+    "owner": "jean.louis.lormeau@dynatrace.com",
     "tags": [
- 
+      "Configurator",
       "smarter"
     ],
-    "preset": true
+    "popularity": 1
   },
   "tiles": [
     {
@@ -44,7 +41,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "##🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- ✅ [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
+      "markdown": "## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- ✅ [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
     },
     {
       "name": "Markdown",
@@ -70,7 +67,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [hosts↗](#newhosts)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "🚦health",
@@ -83,65 +80,6 @@
         "height": 38
       },
       "tileFilter": {}
-    },
-    {
-      "name": "",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 570,
-        "left": 0,
-        "width": 988,
-        "height": 304
-      },
-      "tileFilter": {},
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": " ",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TIMESERIES",
-          "series": [
-            {
-              "metric": "builtin:apps.web.actionCount.category",
-              "aggregation": "NONE",
-              "type": "AREA",
-              "entityType": "APPLICATION",
-              "dimensions": [
-                {
-                  "id": "1",
-                  "name": "Apdex category",
-                  "values": [],
-                  "entityDimension": false
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637039955,
-              "customColor": "#f5d30f"
-            },
-            "APPLICATION-5789829428ED1125¦APPLICATION»APPLICATION-5789829428ED1125»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿APPLICATIONɵtrue¿¿¿Error typeɵfalse": {
-              "lastModified": 1585130890449,
-              "customColor": "#b4e5f9"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605636989629,
-              "customColor": "#008000"
-            },
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637032456,
-              "customColor": "#FF0000"
-            }
-          }
-        },
-        "filtersPerEntityType": {}
-      }
     },
     {
       "name": "User Sessions Query",
@@ -161,6 +99,7 @@
     },
     {
       "name": "Problems",
+      "nameSize": "small",
       "tileType": "OPEN_PROBLEMS",
       "configured": true,
       "bounds": {
@@ -173,6 +112,7 @@
     },
     {
       "name": "Service health",
+      "nameSize": "small",
       "tileType": "SERVICES",
       "configured": true,
       "bounds": {
@@ -186,6 +126,7 @@
     },
     {
       "name": "Database health",
+      "nameSize": "small",
       "tileType": "DATABASES_OVERVIEW",
       "configured": true,
       "bounds": {
@@ -199,6 +140,7 @@
     },
     {
       "name": "Host health",
+      "nameSize": "small",
       "tileType": "HOSTS",
       "configured": true,
       "bounds": {
@@ -283,65 +225,6 @@
       },
       "tileFilter": {},
       "markdown": "----"
-    },
-    {
-      "name": "",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 114,
-        "width": 266,
-        "height": 152
-      },
-      "tileFilter": {},
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "ApdexCategory",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:apps.web.actionCount.category",
-              "aggregation": "NONE",
-              "type": "AREA",
-              "entityType": "APPLICATION",
-              "dimensions": [
-                {
-                  "id": "1",
-                  "name": "Apdex category",
-                  "values": [],
-                  "entityDimension": false
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {
-            "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637039955,
-              "customColor": "#f5d30f"
-            },
-            "APPLICATION-5789829428ED1125¦APPLICATION»APPLICATION-5789829428ED1125»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿APPLICATIONɵtrue¿¿¿Error typeɵfalse": {
-              "lastModified": 1585130890449,
-              "customColor": "#b4e5f9"
-            },
-            "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605636989629,
-              "customColor": "#008000"
-            },
-            "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-              "lastModified": 1605637032456,
-              "customColor": "#FF0000"
-            }
-          }
-        },
-        "filtersPerEntityType": {}
-      }
     },
     {
       "name": "Rage click",
@@ -680,7 +563,7 @@
       "limit": 50
     },
     {
-      "name": "Frustrated user sessions",
+      "name": "Slowest user actions",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -705,24 +588,8 @@
       "markdown": "----"
     },
     {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 1710,
-        "left": 1026,
-        "width": 988,
-        "height": 266
-      },
-      "tileFilter": {},
-      "customName": "Frustrated visites",
-      "query": "SELECT usersession.ip , duration, userActionCount, numberOfRageClicks, userType, endTime   FROM usersession where userExperienceScore = \"FRUSTRATED\" ORDER BY endTime DESC ",
-      "type": "TABLE",
-      "timeFrameShift": "-1d",
-      "limit": 50
-    },
-    {
       "name": "",
+      "nameSize": "small",
       "tileType": "APPLICATIONS",
       "configured": true,
       "bounds": {
@@ -754,6 +621,7 @@
     },
     {
       "name": "",
+      "nameSize": "small",
       "tileType": "SYNTHETIC_TESTS",
       "configured": true,
       "bounds": {
@@ -885,36 +753,23 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
           },
           {
             "matcher": "B:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -936,7 +791,30 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -970,16 +848,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1000,7 +883,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1034,30 +924,15 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1078,7 +953,30 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1105,16 +1003,21 @@
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A",
             "properties": {
               "seriesType": "AREA"
-            }
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1135,7 +1038,14 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
     },
     {
@@ -1162,30 +1072,15 @@
       ],
       "visualConfig": {
         "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "threshold": {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ]
-          },
-          "seriesType": "LINE"
-        },
+        "global": {},
         "rules": [
           {
             "matcher": "A:",
             "properties": {
+              "color": "DEFAULT",
               "seriesType": "COLUMN"
-            }
+            },
+            "seriesOverrides": []
           }
         ],
         "axes": {
@@ -1206,8 +1101,230 @@
               "defaultAxis": true
             }
           ]
-        }
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
       }
+    },
+    {
+      "name": " ",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": [
+              {
+                "name": "SATISFIED",
+                "color": "#008000"
+              },
+              {
+                "name": "TOLERATING",
+                "color": "#f5d30f"
+              },
+              {
+                "name": "FRUSTRATED",
+                "color": "#FF0000"
+              }
+            ]
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "ApdexCategory",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 114,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": [
+              {
+                "name": "SATISFIED",
+                "color": "#008000"
+              },
+              {
+                "name": "TOLERATING",
+                "color": "#f5d30f"
+              },
+              {
+                "name": "FRUSTRATED",
+                "color": "#FF0000"
+              }
+            ]
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 1710,
+        "left": 1026,
+        "width": 988,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Slowest visually complete",
+      "query": "SELECT usersession.ip AS\"IP\", usersession.userType AS\"UserType\", name AS\"UserActionName\", visuallyCompleteTime AS \"Slowest visually complete\", apdexCategory AS \"UserAction\", usersession.userExperienceScore AS \"UserSession\"  FROM useraction  ORDER BY visuallyCompleteTime    DESC ",
+      "type": "TABLE",
+      "timeFrameShift": "-1d",
+      "limit": 50
     }
-  ]
+  ],
+  "tilesNameSize": "small"
 }
