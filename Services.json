@@ -3646,7 +3646,7 @@
       "tileFilter": {}
     },
     {
-      "name": "Failure rate (any  errors)",
+      "name": "Error rate (heatmap)",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
