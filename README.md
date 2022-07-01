@@ -10,6 +10,9 @@ A set of dashboards for beginners or experts, designed to show the main KPI of y
 ## Main Dashboard
 ![Dynatrace_simply_smarter](Dynatrace_simply_smarter.png)
 
+## Project centric => filter by management zone
+![MZ](MZ.png)
+
 ## Application
 ![Applications](Applications.png)
 
