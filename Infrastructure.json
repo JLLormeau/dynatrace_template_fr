@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.239.178.20220419-195605"
+    "clusterVersion": "1.244.128.20220627-170555"
   },
   "id": "bbbbbbbb-a003-a017-0007-000000000001",
   "dashboardMetadata": {
@@ -568,13 +568,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -645,13 +651,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -722,13 +734,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -799,13 +817,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -877,13 +901,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -953,13 +983,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1029,13 +1065,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1105,13 +1147,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1119,10 +1167,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 570,
+        "top": 722,
         "left": 608,
         "width": 380,
-        "height": 304
+        "height": 152
       },
       "tileFilter": {},
       "customName": "CPU usage by host",
@@ -1182,13 +1230,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1272,7 +1326,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1294,7 +1350,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1364,13 +1424,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1378,10 +1444,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 950,
+        "top": 1102,
         "left": 608,
         "width": 380,
-        "height": 304
+        "height": 152
       },
       "tileFilter": {},
       "customName": "Memory usage by host",
@@ -1441,13 +1507,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1517,13 +1589,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1586,7 +1664,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1608,7 +1688,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1679,13 +1763,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1756,13 +1846,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1833,13 +1929,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1909,13 +2011,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1978,7 +2086,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2000,9 +2110,507 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      }
+    },
+    {
+      "name": "Unavailability host",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 1634,
+        "left": 0,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1672,
+        "left": 0,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "- - - "
+    },
+    {
+      "name": "Unavailability rate",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1710,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Disk throughput write",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "(100 - builtin:host.availability:splitBy(\"dt.entity.host\")):sort(value(auto,ascending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "RED",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Resources available (host)",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 1634,
+        "left": 1026,
+        "width": 418,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1672,
+        "left": 1026,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "- - - "
+    },
+    {
+      "name": "Memory resource",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1710,
+        "left": 1520,
+        "width": 494,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:host.mem.avail.pct:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "visible": true,
+              "min": "1",
+              "max": "100",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 20,
+                "color": "#7dc540"
+              },
+              {
+                "value": 10,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "CPU available ",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1710,
+        "left": 1026,
+        "width": 494,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "visible": true,
+              "min": "1",
+              "max": "100",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 20,
+                "color": "#7dc540"
+              },
+              {
+                "value": 10,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "CPU idle %",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 608,
+        "width": 380,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "CPU usage %",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.cpu.idle",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "sortBy": "ASC",
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "limit": 20,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HONEYCOMB",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 20,
+                "color": "#7dc540"
+              },
+              {
+                "value": 10,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": false,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Memory available %",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 608,
+        "width": 380,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "CPU usage %",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.mem.avail.pct",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "sortBy": "DESC",
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "limit": 20,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HONEYCOMB",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 20,
+                "color": "#7dc540"
+              },
+              {
+                "value": 10,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": false,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
       }
     }
-  ],
-  "tilesNameSize": "small"
+  ]
 }

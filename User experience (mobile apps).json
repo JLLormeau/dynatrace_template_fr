@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.239.178.20220419-195605"
+    "clusterVersion": "1.244.128.20220627-170555"
   },
   "id": "bbbbbbbb-a003-a017-0003-000000000001",
   "dashboardMetadata": {
@@ -13,8 +13,7 @@
     "tags": [
       "Configurator",
       "smarter"
-    ],
-    "popularity": 1
+    ]
   },
   "tiles": [
     {
@@ -706,7 +705,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -728,7 +729,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -791,13 +796,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -860,13 +871,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -929,13 +946,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -992,7 +1015,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1014,7 +1039,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1084,13 +1113,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1153,13 +1188,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1216,7 +1257,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1238,7 +1281,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1301,13 +1348,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1364,7 +1417,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1386,7 +1441,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1479,7 +1538,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1504,7 +1565,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -1550,7 +1615,9 @@
           },
           "yAxes": []
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1572,12 +1639,15 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
       }
     }
-  ],
-  "tilesNameSize": "small"
+  ]
 }

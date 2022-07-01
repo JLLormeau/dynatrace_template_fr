@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.239.178.20220419-195605"
+    "clusterVersion": "1.244.128.20220627-170555"
   },
   "id": "bbbbbbbb-a003-a017-0002-000000000001",
   "dashboardMetadata": {
@@ -276,7 +276,7 @@
       "tileFilter": {}
     },
     {
-      "name": "Top user action > 12 sec",
+      "name": "Top user action not satisfied ",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -683,23 +683,6 @@
       "configured": true,
       "bounds": {
         "top": 1330,
-        "left": 0,
-        "width": 988,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": " Top user actions > 12 sec",
-      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action > 12 s\"  FROM useraction where  visuallyCompleteTime > 12000   GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
-      "type": "TABLE",
-      "timeFrameShift": "dynamic",
-      "limit": 50
-    },
-    {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 1330,
         "left": 1026,
         "width": 988,
         "height": 304
@@ -792,7 +775,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -814,7 +799,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -884,13 +873,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -954,7 +949,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -976,7 +973,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1039,13 +1040,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1102,7 +1109,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1124,7 +1133,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1196,7 +1209,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1221,7 +1236,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -1280,7 +1299,9 @@
           },
           "yAxes": []
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1302,7 +1323,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -1324,7 +1349,23 @@
       "type": "TABLE",
       "timeFrameShift": "-1d",
       "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 1330,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": " Top user actions not satisfied",
+      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action not satisfied\"  FROM useraction where  apdexCategory IS NOT \"SATISFIED\"  GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
     }
-  ],
-  "tilesNameSize": "small"
+  ]
 }

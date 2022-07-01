@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.239.178.20220419-195605"
+    "clusterVersion": "1.244.128.20220627-170555"
   },
   "id": "bbbbbbbb-a003-a017-0001-000000000001",
   "dashboardMetadata": {
@@ -14,7 +14,7 @@
       "Configurator",
       "smarter"
     ],
-    "popularity": 1
+    "popularity": 4
   },
   "tiles": [
     {
@@ -115,7 +115,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 874,
+        "top": 1292,
         "left": 1026,
         "width": 342,
         "height": 38
@@ -178,7 +178,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 912,
+        "top": 1330,
         "left": 1026,
         "width": 988,
         "height": 38
@@ -191,7 +191,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1254,
+        "top": 1672,
         "left": 0,
         "width": 266,
         "height": 38
@@ -203,7 +203,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 1292,
+        "top": 1710,
         "left": 0,
         "width": 988,
         "height": 38
@@ -216,7 +216,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 874,
+        "top": 1292,
         "left": 0,
         "width": 304,
         "height": 38
@@ -228,7 +228,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 912,
+        "top": 1330,
         "left": 0,
         "width": 988,
         "height": 38
@@ -241,7 +241,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 1292,
+        "top": 1710,
         "left": 1026,
         "width": 988,
         "height": 38
@@ -254,7 +254,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1254,
+        "top": 1672,
         "left": 1026,
         "width": 266,
         "height": 38
@@ -266,7 +266,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1634,
+        "top": 2052,
         "left": 0,
         "width": 342,
         "height": 38
@@ -278,7 +278,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 1672,
+        "top": 2090,
         "left": 0,
         "width": 988,
         "height": 38
@@ -291,7 +291,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1634,
+        "top": 2052,
         "left": 1026,
         "width": 342,
         "height": 38
@@ -303,7 +303,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 1672,
+        "top": 2090,
         "left": 1026,
         "width": 988,
         "height": 38
@@ -455,7 +455,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2014,
+        "top": 2432,
         "left": 0,
         "width": 342,
         "height": 38
@@ -467,7 +467,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2014,
+        "top": 2432,
         "left": 1026,
         "width": 342,
         "height": 38
@@ -479,7 +479,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2394,
+        "top": 2812,
         "left": 0,
         "width": 342,
         "height": 38
@@ -491,7 +491,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2394,
+        "top": 2812,
         "left": 1026,
         "width": 342,
         "height": 38
@@ -503,7 +503,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 2052,
+        "top": 2470,
         "left": 0,
         "width": 988,
         "height": 38
@@ -516,7 +516,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 2052,
+        "top": 2470,
         "left": 1026,
         "width": 988,
         "height": 38
@@ -529,7 +529,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 2432,
+        "top": 2850,
         "left": 0,
         "width": 988,
         "height": 38
@@ -542,7 +542,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 2432,
+        "top": 2850,
         "left": 1026,
         "width": 988,
         "height": 38
@@ -692,13 +692,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -783,13 +789,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -874,13 +886,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -944,13 +962,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1014,13 +1038,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1105,13 +1135,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1196,13 +1232,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1210,7 +1252,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 950,
+        "top": 1368,
         "left": 0,
         "width": 494,
         "height": 304
@@ -1265,13 +1307,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1279,7 +1327,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 950,
+        "top": 1368,
         "left": 1026,
         "width": 494,
         "height": 304
@@ -1334,13 +1382,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1348,7 +1402,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1330,
+        "top": 1748,
         "left": 0,
         "width": 494,
         "height": 304
@@ -1403,13 +1457,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1417,7 +1477,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1330,
+        "top": 1748,
         "left": 494,
         "width": 494,
         "height": 304
@@ -1465,7 +1525,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1487,7 +1549,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1495,7 +1561,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1330,
+        "top": 1748,
         "left": 1026,
         "width": 494,
         "height": 304
@@ -1549,13 +1615,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1563,7 +1635,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1330,
+        "top": 1748,
         "left": 1520,
         "width": 494,
         "height": 304
@@ -1611,7 +1683,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1633,7 +1707,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1641,7 +1719,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1710,
+        "top": 2128,
         "left": 0,
         "width": 342,
         "height": 304
@@ -1703,13 +1781,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1717,7 +1801,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1710,
+        "top": 2128,
         "left": 342,
         "width": 646,
         "height": 304
@@ -1772,7 +1856,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1794,7 +1880,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1802,7 +1892,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1710,
+        "top": 2128,
         "left": 1026,
         "width": 342,
         "height": 304
@@ -1857,13 +1947,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1871,7 +1967,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1710,
+        "top": 2128,
         "left": 1368,
         "width": 646,
         "height": 304
@@ -1919,7 +2015,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -1941,7 +2039,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -1949,7 +2051,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2090,
+        "top": 2508,
         "left": 0,
         "width": 342,
         "height": 304
@@ -2011,13 +2113,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2025,7 +2133,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2090,
+        "top": 2508,
         "left": 342,
         "width": 646,
         "height": 304
@@ -2080,7 +2188,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2102,7 +2212,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2110,7 +2224,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2090,
+        "top": 2508,
         "left": 1026,
         "width": 342,
         "height": 304
@@ -2172,13 +2286,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2186,7 +2306,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2090,
+        "top": 2508,
         "left": 1368,
         "width": 646,
         "height": 304
@@ -2241,7 +2361,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2263,7 +2385,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2271,7 +2397,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2470,
+        "top": 2888,
         "left": 0,
         "width": 342,
         "height": 304
@@ -2333,13 +2459,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2347,7 +2479,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2470,
+        "top": 2888,
         "left": 342,
         "width": 646,
         "height": 304
@@ -2402,7 +2534,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2424,7 +2558,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2432,7 +2570,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2470,
+        "top": 2888,
         "left": 1026,
         "width": 342,
         "height": 304
@@ -2487,13 +2625,19 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [],
         "tableSettings": {},
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2501,7 +2645,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2470,
+        "top": 2888,
         "left": 1368,
         "width": 646,
         "height": 304
@@ -2549,7 +2693,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2571,7 +2717,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       }
     },
     {
@@ -2656,7 +2806,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2678,7 +2830,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -2766,7 +2922,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2788,7 +2946,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -2871,7 +3033,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -2896,7 +3060,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -2979,7 +3147,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -3004,7 +3174,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -3015,7 +3189,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 950,
+        "top": 1368,
         "left": 494,
         "width": 494,
         "height": 304
@@ -3091,7 +3265,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -3113,7 +3289,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -3124,7 +3304,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 950,
+        "top": 1368,
         "left": 1520,
         "width": 494,
         "height": 304
@@ -3200,7 +3380,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "thresholds": [
           {
             "axisTarget": "LEFT",
@@ -3222,7 +3404,11 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
@@ -3289,7 +3475,9 @@
             }
           ]
         },
-        "heatmapSettings": {},
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
         "singleValueSettings": {
           "showTrend": true,
           "showSparkLine": true,
@@ -3319,12 +3507,273 @@
         "graphChartSettings": {
           "connectNulls": false
         },
-        "honeycombSettings": {}
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
       },
       "queriesSettings": {
         "resolution": ""
       }
+    },
+    {
+      "name": "Error rate (heatmap)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 0,
+        "width": 988,
+        "height": 342
+      },
+      "tileFilter": {},
+      "customName": "Success rate (time series)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.errors.total.rate",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "sortBy": "DESC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "serviceType",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "WEB_REQUEST_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "limit": 20,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "RED",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Error rate (Web Requests)",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 874,
+        "left": 0,
+        "width": 418,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Error rate (Web Services)",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 874,
+        "left": 1026,
+        "width": 418,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Failure rate (any  errors)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1026,
+        "width": 988,
+        "height": 342
+      },
+      "tileFilter": {},
+      "customName": "Success rate (time series)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.errors.total.rate",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "sortBy": "DESC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "serviceType",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "WEB_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "limit": 20,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "RED",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 1026,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 0,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "- - - "
     }
-  ],
-  "tilesNameSize": "small"
+  ]
 }
