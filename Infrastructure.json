@@ -2435,7 +2435,7 @@
       }
     },
     {
-      "name": "CPU idle %",
+      "name": "CPU idle % - (red<10% & green>20%)",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -2524,7 +2524,7 @@
       }
     },
     {
-      "name": "Memory available %",
+      "name": "Memory available % - (red<10% & green>20%)",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
