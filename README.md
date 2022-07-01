@@ -25,4 +25,7 @@ A set of dashboards for beginners or experts, designed to show the main KPI of y
 ## Infrastructure
 ![Infra](Infra.png)
 
+## SLO
+![SLO](SLO.png)
+
 and so more... :)
