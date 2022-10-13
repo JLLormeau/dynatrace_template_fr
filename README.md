@@ -1,6 +1,6 @@
 # Dynatrace: simply smarter
 Designed by Dynatrace France Services / ELA + JLL  
-Latest update : 2022/07/01
+Latest update : 2022/10/13
 
 NEW : SLO per management zone integrated to this dashboard  
  - for more detail click [here](https://github.com/dynatrace-ace-services/quickstart-ace-configurator/tree/main/SLO)
