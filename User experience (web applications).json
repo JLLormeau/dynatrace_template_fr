@@ -1,20 +1,21 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.244.128.20220627-170555"
+    "clusterVersion": "1.252.155.20221012-164912"
   },
-  "id": "bbbbbbbb-a003-a017-0002-000000000001",
+  "id": "bbbbbbbb-a003-a017-0002-000000000002",
   "dashboardMetadata": {
     "name": "✔ User experience (web applications)",
     "shared": true,
-    "owner": "jean.louis.lormeau@dynatrace.com",
+    "owner": "ACE",
     "tags": [
       "Configurator",
       "smarter"
     ],
-    "popularity": 1
+    "popularity": 1,
+    "hasConsistentColors": false
   },
   "tiles": [
     {
@@ -28,7 +29,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000001)\n"
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000002)\n"
     },
     {
       "name": "Markdown",
@@ -41,7 +42,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- ✅ [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
+      "markdown": "## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n***\n\n- ✅ [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000002)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000002) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
       "name": "Markdown",
@@ -54,7 +55,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000001) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000001) \n- [slow requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387) \n- [failed requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110) "
+      "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000002) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000002) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) "
     },
     {
       "name": "Markdown",
@@ -67,7 +68,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)"
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "🚦health",
@@ -500,23 +501,6 @@
       "configured": true,
       "bounds": {
         "top": 304,
-        "left": 1330,
-        "width": 266,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " Errors HTTP & Javascript",
-      "query": "select count(*) as \" \"  from useraction where javaScriptErrorCount >=1 or requestErrorCount >=1 ",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic",
-      "limit": 50
-    },
-    {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 304,
         "left": 418,
         "width": 266,
         "height": 152
@@ -530,23 +514,7 @@
     },
     {
       "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 1634,
-        "width": 266,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " User sessions with rage click ",
-      "query": "SELECT  COUNT(*) AS \" \" FROM usersession WHERE numberOfRageClicks>=1",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic",
-      "limit": 50
-    },
-    {
-      "name": "User Sessions Query",
+      "nameSize": "small",
       "tileType": "DTAQL",
       "configured": true,
       "bounds": {
@@ -804,181 +772,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
-    },
-    {
-      "name": " ",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 0,
-        "width": 266,
-        "height": 304
       },
-      "tileFilter": {},
-      "customName": " ",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:apps.web.apdex.userType",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.application"
-          ],
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TOP_LIST",
-        "global": {},
-        "rules": [
-          {
-            "matcher": "A",
-            "properties": {
-              "seriesType": "AREA"
-            },
-            "seriesOverrides": []
-          },
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "displayName": "",
-            "visible": true
-          },
-          "yAxes": [
-            {
-              "displayName": "",
-              "visible": true,
-              "min": "AUTO",
-              "max": "AUTO",
-              "position": "LEFT",
-              "queryIds": [
-                "A"
-              ],
-              "defaultAxis": true
-            }
-          ]
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [],
-        "tableSettings": {},
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      }
-    },
-    {
-      "name": " ",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 266,
-        "width": 722,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:apps.web.apdex.userType",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.application"
-          ],
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {},
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "AREA"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "displayName": "",
-            "visible": true
-          },
-          "yAxes": [
-            {
-              "displayName": "",
-              "visible": true,
-              "min": "AUTO",
-              "max": "AUTO",
-              "position": "LEFT",
-              "queryIds": [
-                "A"
-              ],
-              "defaultAxis": true
-            }
-          ]
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "visible": true
-          }
-        ],
-        "tableSettings": {},
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      }
+      "metricExpressions": [
+        "resolution=null&(builtin:apps.web.visuallyComplete.load.browser:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names,(builtin:apps.web.visuallyComplete.xhr.browser:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1053,7 +850,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:apps.web.countOfErrorsDuringUserActions:splitBy(\"Error type\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1138,7 +938,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:apps.web.countOfErrorsDuringUserActions:splitBy(\"Error type\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1244,10 +1047,14 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "ApdexCategory",
+      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1331,24 +1138,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
-    },
-    {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 1710,
-        "left": 1026,
-        "width": 988,
-        "height": 266
       },
-      "tileFilter": {},
-      "customName": "Slowest visually complete",
-      "query": "SELECT usersession.ip AS\"IP\", usersession.userType AS\"UserType\", name AS\"UserActionName\", visuallyCompleteTime AS \"Slowest visually complete\", apdexCategory AS \"UserAction\", usersession.userExperienceScore AS \"UserSession\"  FROM useraction  ORDER BY visuallyCompleteTime    DESC ",
-      "type": "TABLE",
-      "timeFrameShift": "-1d",
-      "limit": 50
+      "metricExpressions": [
+        "resolution=Inf&(builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "User Sessions Query",
@@ -1361,10 +1154,280 @@
         "height": 304
       },
       "tileFilter": {},
-      "customName": " Top user actions not satisfied",
-      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action not satisfied\"  FROM useraction where  apdexCategory IS NOT \"SATISFIED\"  GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
+      "customName": " Top user actions Frustrated",
+      "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"Frustrated user action\"  FROM useraction where  apdexCategory IS \"FRUSTRATED\"  GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
       "type": "TABLE",
       "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": " ",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 266,
+        "width": 722,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.application"
+          ],
+          "sortBy": "ASC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "ROYALBLUE",
+              "seriesType": "AREA"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.85,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.5,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:apps.web.apdex.userType:splitBy(\"dt.entity.application\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+      ]
+    },
+    {
+      "name": " ",
+      "nameSize": "",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 0,
+        "width": 266,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.application"
+          ],
+          "sortBy": "ASC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "AREA"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.85,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.5,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:apps.web.apdex.userType:splitBy(\"dt.entity.application\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+      ]
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1330,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " Errors HTTP & JS",
+      "query": "select count(*) as \" \"  from useraction where javaScriptErrorCount >=1 or requestErrorCount >=1 ",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1634,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "Sessions with rage click ",
+      "query": "SELECT  COUNT(*) AS \" \" FROM usersession WHERE numberOfRageClicks>=1",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 1710,
+        "left": 1026,
+        "width": 988,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Slowest response time (visually complete)",
+      "query": "SELECT usersession.ip AS\"IP\", usersession.userType AS\"UserType\", name AS\"UserActionName\", visuallyCompleteTime AS \"Slowest visually complete\", apdexCategory AS \"UserAction\", usersession.userExperienceScore AS \"UserSession\"  FROM useraction  ORDER BY visuallyCompleteTime    DESC ",
+      "type": "TABLE",
+      "timeFrameShift": "-1d",
       "limit": 50
     }
   ]

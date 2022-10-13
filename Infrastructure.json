@@ -1,20 +1,21 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.244.128.20220627-170555"
+    "clusterVersion": "1.252.155.20221012-164912"
   },
-  "id": "bbbbbbbb-a003-a017-0007-000000000001",
+  "id": "bbbbbbbb-a003-a017-0007-000000000002",
   "dashboardMetadata": {
     "name": "✔ Infrastructure",
     "shared": true,
-    "owner": "jean.louis.lormeau@dynatrace.com",
+    "owner": "ACE",
     "tags": [
       "Configurator",
       "smarter"
     ],
-    "popularity": 1
+    "popularity": 1,
+    "hasConsistentColors": false
   },
   "tiles": [
     {
@@ -28,7 +29,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000001)\n"
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000002)\n"
     },
     {
       "name": "Markdown",
@@ -41,7 +42,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
+      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000002)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000002) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
       "name": "Markdown",
@@ -54,7 +55,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000001) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000001) \n- [slow requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387) \n- [failed requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110)\n"
+      "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000002) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000002) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
     },
     {
       "name": "Markdown",
@@ -67,7 +68,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- ✅ [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)\n"
+      "markdown": "## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n***\n- ✅ [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "Problems",
@@ -581,7 +582,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "TOP1 - memory used %",
@@ -664,7 +669,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "TOP1 - Page faults per second",
@@ -747,7 +756,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.mem.avail.pfps:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.mem.avail.pfps:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "TOP1 - Disk used %",
@@ -830,7 +843,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.disk.usedPct:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.disk.usedPct:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "DNS query time",
@@ -914,7 +931,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.dns.queryTime:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.dns.queryTime:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "CPU usage by host",
@@ -996,7 +1017,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Memory usage by container",
@@ -1078,7 +1102,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:containers.memory.usagePercent:splitBy(\"dt.entity.container_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "CPU usage by container",
@@ -1160,7 +1187,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:containers.cpu_usage2:splitBy(\"dt.entity.docker_container_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "CPU usage by host",
@@ -1243,7 +1273,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "Traffic in/out",
@@ -1355,7 +1389,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:host.net.nic.trafficIn:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names,(builtin:host.net.nic.trafficOut:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Memory usage by host",
@@ -1437,7 +1474,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.mem.usage:splitBy(\"dt.entity.host\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Memory usage by host",
@@ -1520,7 +1560,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "Process memory usage",
@@ -1602,7 +1646,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Process memory usage",
@@ -1693,7 +1740,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Disk throughput write",
@@ -1776,7 +1826,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.disk.throughput.write:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Disk capacity by host",
@@ -1859,7 +1912,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.disk.usedPct:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Disk throughput read",
@@ -1942,7 +1998,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.disk.throughput.read:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Process CPU usage",
@@ -2024,7 +2083,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Process CPU usage",
@@ -2115,7 +2177,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Unavailability host",
@@ -2221,7 +2286,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&((100 - builtin:host.availability:splitBy(\"dt.entity.host\")):sort(value(auto,ascending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Resources available (host)",
@@ -2339,7 +2407,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:host.mem.avail.pct:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()):limit(100):names"
+      ]
     },
     {
       "name": "CPU available ",
@@ -2432,7 +2503,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()):limit(100):names"
+      ]
     },
     {
       "name": "CPU idle % - (red<10% & green>20%)",
@@ -2521,7 +2595,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.cpu.idle:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(20)):names"
+      ]
     },
     {
       "name": "Memory available % - (red<10% & green>20%)",
@@ -2610,7 +2687,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.mem.avail.pct:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(20)):names"
+      ]
     }
   ]
 }

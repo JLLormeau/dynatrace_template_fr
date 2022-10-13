@@ -1,20 +1,20 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.244.128.20220627-170555"
+    "clusterVersion": "1.252.155.20221012-164912"
   },
-  "id": "bbbbbbbb-a003-a017-0006-000000000001",
+  "id": "bbbbbbbb-a003-a017-0006-000000000002",
   "dashboardMetadata": {
     "name": "✔ Synthetic (service)",
     "shared": true,
-    "owner": "jean.louis.lormeau@dynatrace.com",
+    "owner": "ACE",
     "tags": [
       "Configurator",
       "smarter"
     ],
-    "popularity": 1
+    "hasConsistentColors": false
   },
   "tiles": [
     {
@@ -28,7 +28,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000001)\n"
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000002)\n"
     },
     {
       "name": "Markdown",
@@ -41,7 +41,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000001)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000001)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000001) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) \n"
+      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000002)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000002) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n\n"
     },
     {
       "name": "Markdown",
@@ -54,7 +54,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000001) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000001) \n- ✅ [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000001) \n- [slow requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387) \n- [failed requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110)\n"
+      "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000002) \n- ✅ [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000002) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
     },
     {
       "name": "Markdown",
@@ -67,7 +67,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000001)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [docker↗](#docker)\n- [kubernetes↗](/ui/kubernetes)es)"
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "🚦Health",
@@ -488,7 +488,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": " ",
@@ -580,7 +584,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.http_check\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -662,7 +669,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.synthetic_location\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -754,7 +764,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.synthetic_location\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "HTTP monitor",
@@ -830,7 +843,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:billing.synthetic.requests:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:billing.synthetic.requests:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+      ]
     },
     {
       "name": "HTTP monitor",
@@ -911,7 +928,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.duration.geo:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:synthetic.http.duration.geo:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": "Response size (Average)",
@@ -992,7 +1013,11 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.responseSize.geo:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:synthetic.http.responseSize.geo:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+      ]
     },
     {
       "name": " ",
@@ -1067,7 +1092,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.statusCode:splitBy(\"Status code\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1152,7 +1180,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:synthetic.http.statusCode:splitBy(\"Status code\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1234,7 +1265,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.duration.geo:splitBy(\"dt.entity.http_check\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1326,7 +1360,10 @@
           "showLegend": true,
           "showLabels": false
         }
-      }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:synthetic.http.duration.geo:splitBy(\"dt.entity.http_check\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": " ",
@@ -1408,7 +1445,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.http_check\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Failed",
@@ -1513,7 +1553,11 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.execution.status:filter(and(or(eq(execution_state,FAIL)))):splitBy():sum:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:synthetic.http.execution.status:filter(and(or(eq(execution_state,FAIL)))):splitBy():sum:auto:sort(value(sum,descending)):limit(10))"
+      ]
     },
     {
       "name": "Execution Failed",
@@ -1643,7 +1687,10 @@
       },
       "queriesSettings": {
         "resolution": ""
-      }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:synthetic.http.execution.status:filter(and(or(eq(execution_state,FAIL)))):splitBy(execution_status_name):sum:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
     },
     {
       "name": "Unavailability Synthetic",
