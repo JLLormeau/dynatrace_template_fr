@@ -5,16 +5,15 @@
     ],
     "clusterVersion": "1.256.123.20221216-133150"
   },
-  "id": "bbbbbbbb-a003-a017-0001-000000000011",
+  "id": "bbbbbbbb-a003-a017-0001-000000000133",
   "dashboardMetadata": {
     "name": "✔ Services",
     "shared": true,
-    "owner": "admin",
+    "owner": "jean.louis.lormeau@dynatrace.com",
     "tags": [
       "Configurator",
       "smarter"
     ],
-    "popularity": 1,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -29,7 +28,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000011)\n"
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000133)\n"
     },
     {
       "name": "Markdown",
@@ -42,7 +41,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000011)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000011)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000011)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000011) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
+      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000133)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000133) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
       "name": "Markdown",
@@ -55,7 +54,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000011) \n***\n\n- ✅ [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000011) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000011) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000011) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
+      "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n***\n\n- ✅ [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000133) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000133) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
     },
     {
       "name": "Markdown",
@@ -68,7 +67,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000011)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000011)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "Problems",
@@ -3897,7 +3896,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "🎯[SLO simply smarter](#dashboard;id=ae2ed8e2-b9a7-4747-b769-db91fbb39c77;) \n"
+      "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     }
   ]
 }
