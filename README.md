@@ -17,7 +17,7 @@ A set of dashboards from beginners to experts, designed to show the main KPI of 
 ![Applications](Applications.png)
 
 ## SLO Resource Optimization
-![SLO Resource Optimization](SLO Resource Optimization.png)
+![SLO Resource Optimization](SLO_Resource_Optimization.png)
 
 ## Application
 ![Applications](Applications.png)
