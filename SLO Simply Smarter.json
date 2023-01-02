@@ -2100,7 +2100,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "## [Database success rate](/ui/diagnostictools/mda?mdaId=topdb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%103%110)\n\n\n---"
+      "markdown": "## [Database Success Rate](/ui/diagnostictools/mda?mdaId=topdb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%103%110)\n\n\n---"
     },
     {
       "name": "Response time",
