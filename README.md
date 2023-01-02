@@ -14,7 +14,7 @@ A set of dashboards from beginners to experts, designed to show the main KPI of 
 ![MZ](MZ.png)
 
 ## SLO Simply Smarter
-![Applications](Applications.png)
+![SLO Simply Smarter](SLO_Simply_Smarter.png)
 
 ## SLO Resource Optimization
 ![SLO Resource Optimization](SLO_Resource_Optimization.png)
