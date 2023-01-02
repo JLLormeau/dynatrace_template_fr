@@ -1,21 +1,21 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.252.155.20221012-164912"
+    "clusterVersion": "1.256.123.20221216-133150"
   },
-  "id": "bbbbbbbb-a003-a017-0000-000000000002",
+  "id": "bbbbbbbb-a003-a017-0000-000000000011",
   "dashboardMetadata": {
     "name": "🏠 Dynatrace: simply smarter",
     "shared": true,
-    "owner": "ACE",
+    "owner": "admin",
     "tags": [
       "Configurator",
       "smarter"
     ],
     "preset": true,
-    "popularity": 1,
+    "popularity": 3,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -119,7 +119,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000002)\n***"
+      "markdown": "___\n## 🔍 [Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000011)\n***"
     },
     {
       "name": "Markdown",
@@ -132,7 +132,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n___\n"
+      "markdown": "___\n## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000011)\n___\n"
     },
     {
       "name": "Markdown",
@@ -145,7 +145,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "___\n## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n____\n\n"
+      "markdown": "___\n## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000011)\n____\n\n"
     },
     {
       "name": "Database health",
@@ -182,7 +182,7 @@
       "bounds": {
         "top": 228,
         "left": 1520,
-        "width": 304,
+        "width": 342,
         "height": 76
       },
       "tileFilter": {},
@@ -231,32 +231,6 @@
         "WORLD"
       ],
       "metric": "APDEX"
-    },
-    {
-      "name": "Smartscape",
-      "nameSize": "small",
-      "tileType": "PURE_MODEL",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 1520,
-        "width": 304,
-        "height": 152
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Network status",
-      "nameSize": "small",
-      "tileType": "NETWORK_MEDIUM",
-      "configured": true,
-      "bounds": {
-        "top": 456,
-        "left": 1520,
-        "width": 304,
-        "height": 152
-      },
-      "tileFilter": {}
     },
     {
       "name": "Real users",
@@ -346,7 +320,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1710,
+        "left": 1824,
         "width": 152,
         "height": 152
       },
@@ -512,7 +486,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.requestCount.total:splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:service.requestCount.total:splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -523,7 +497,7 @@
       "bounds": {
         "top": 38,
         "left": 1102,
-        "width": 152,
+        "width": 266,
         "height": 152
       },
       "tileFilter": {},
@@ -613,7 +587,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1558,
+        "left": 1672,
         "width": 152,
         "height": 152
       },
@@ -713,8 +687,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -724,7 +698,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1254,
+        "left": 1368,
         "width": 152,
         "height": 152
       },
@@ -824,8 +798,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -835,7 +809,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1406,
+        "left": 1520,
         "width": 152,
         "height": 152
       },
@@ -935,8 +909,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -963,7 +937,20 @@
         "height": 456
       },
       "tileFilter": {},
-      "markdown": "\n## 1) Filter your application\n \n- select a management zone based on the application\n(click on the funnel icon at the top left)\n- select the timeframe period\n\n\n## 2) Select your analyze   \n- **[Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)** :     \n=> user experience analysis measured from browser or mobile   device\n- **[Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000002)** :   \n=> full stack analysis of the distributed traces\n- **[Infrastructure & cloud](#dashboard;id=782366bf-367e-4a62-a13a-7ee7e1343f2b)** :   \n=> process, hosts & cloud\n- **[Service Level Objectif](/ui/slo?slosc=name&slosd=asc&sloglobal=false&gtf=-7d%20to%20now)** :   \n=> slo based on management zone \n\nclick [here](https://github.com/dynatrace-ace-services/quickstart-ace-configurator/blob/main/SLO/Readme.md) to create your application and your slo based on management zone\n"
+      "markdown": "\n## 1) Filter your application\n \n- select a management zone based on the application\n(click on the funnel icon at the top left)\n- select the timeframe period\n\n\n## 2) Select your analyze   \n- **[Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000011)** :     \n=> user experience analysis measured from browser or mobile   device\n- **[Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000011)** :   \n=> full stack analysis of the distributed traces\n- **[Infrastructure & cloud](#dashboard;id=782366bf-367e-4a62-a13a-7ee7e1343f2b)** :   \n=> process, hosts & cloud\n- **[Service Level Objective](/ui/slo?slosc=name&slosd=asc&sloglobal=false&gtf=-7d%20to%20now)** :   \n=> slo based on management zone \n\nclick [here](https://github.com/dynatrace-ace-services/quickstart-ace-configurator/blob/main/SLO/Readme.md) to create your application and your slo based on management zone\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1520,
+        "width": 342,
+        "height": 114
+      },
+      "tileFilter": {},
+      "markdown": "\n## - [SLO Simply Smarter ](#dashboard;id=ae2ed8e2-b9a7-4747-b769-db91fbb39c77)\nboost the quality of your applications and the services by driving them with the SLOs  \n\n\n\n\n \n\n\n\n \n"
     },
     {
       "name": "CPU usage %",
@@ -986,7 +973,7 @@
           "splitBy": [
             "dt.entity.host"
           ],
-          "sortBy": "ASC",
+          "sortBy": "DESC",
           "filterBy": {
             "nestedFilters": [],
             "criteria": []
@@ -1011,7 +998,6 @@
         ],
         "axes": {
           "xAxis": {
-            "displayName": "",
             "visible": true
           },
           "yAxes": []
@@ -1054,8 +1040,34 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(10)):limit(100):names"
       ]
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1596,
+        "width": 266,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "click [here](https://github.com/dynatrace-ace-services/slo-simply-smarter/blob/main/README.md)  to import slo template"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 418,
+        "left": 1520,
+        "width": 342,
+        "height": 152
+      },
+      "tileFilter": {},
+      "markdown": "## - [SLO Resource Optimization](#dashboard;id=bb3c1f41-0f7b-4b5e-a87d-198edff09494)\n\noptimize the resource consumption with these SLOs, first step to reduce the cost of your infrastructure and improve your CO2 footprint "
     }
   ]
 }

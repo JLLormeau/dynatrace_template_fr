@@ -1,15 +1,15 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.252.155.20221012-164912"
+    "clusterVersion": "1.256.123.20221216-133150"
   },
-  "id": "bbbbbbbb-a003-a017-0001-000000000002",
+  "id": "bbbbbbbb-a003-a017-0001-000000000011",
   "dashboardMetadata": {
     "name": "✔ Services",
     "shared": true,
-    "owner": "ACE",
+    "owner": "admin",
     "tags": [
       "Configurator",
       "smarter"
@@ -24,12 +24,12 @@
       "configured": true,
       "bounds": {
         "top": 0,
-        "left": 1406,
+        "left": 1254,
         "width": 266,
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000002)\n"
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000011)\n"
     },
     {
       "name": "Markdown",
@@ -42,7 +42,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000002)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000002)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000002) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
+      "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000011)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000011)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000011)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000011) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
       "name": "Markdown",
@@ -55,7 +55,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n***\n\n- ✅ [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000002) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000002) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000002) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
+      "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000011) \n***\n\n- ✅ [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000011) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000011) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000011) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
     },
     {
       "name": "Markdown",
@@ -68,7 +68,7 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000002)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000011)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000011)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "Problems",
@@ -708,8 +708,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -809,8 +809,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -910,8 +910,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1171,8 +1171,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1272,8 +1272,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1843,7 +1843,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1937,7 +1937,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2187,7 +2187,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2281,7 +2281,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2366,7 +2366,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2460,7 +2460,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2545,7 +2545,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2639,7 +2639,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2923,7 +2923,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3042,7 +3042,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3159,7 +3159,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3276,7 +3276,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3394,7 +3394,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3512,7 +3512,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(10)):limit(100):names"
+        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3618,8 +3618,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.response.time:splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(10)):limit(100):names",
-        "resolution=null&(builtin:service.response.time:splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(10))"
+        "resolution=Inf&(builtin:service.response.time:splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.response.time:splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20))"
       ]
     },
     {
@@ -3885,6 +3885,19 @@
       },
       "tileFilter": {},
       "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1520,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "🎯[SLO simply smarter](#dashboard;id=ae2ed8e2-b9a7-4747-b769-db91fbb39c77;) \n"
     }
   ]
 }
