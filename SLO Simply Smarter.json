@@ -627,10 +627,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 494,
+        "top": 532,
         "left": 1026,
         "width": 608,
-        "height": 380
+        "height": 342
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -722,7 +722,7 @@
         "top": 114,
         "left": 1026,
         "width": 608,
-        "height": 380
+        "height": 418
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -1025,7 +1025,7 @@
         "top": 988,
         "left": 0,
         "width": 608,
-        "height": 380
+        "height": 418
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -1111,10 +1111,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1368,
+        "top": 1406,
         "left": 0,
         "width": 608,
-        "height": 380
+        "height": 342
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -1330,11 +1330,11 @@
                 "nestedFilters": [],
                 "criteria": [
                   {
-                    "value": "WEB_SERVICE",
+                    "value": "WEB_REQUEST_SERVICE",
                     "evaluator": "IN"
                   },
                   {
-                    "value": "WEB_REQUEST_SERVICE",
+                    "value": "WEB_SERVICE",
                     "evaluator": "IN"
                   }
                 ]
@@ -1439,7 +1439,7 @@
         "top": 988,
         "left": 1026,
         "width": 608,
-        "height": 380
+        "height": 418
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -1525,10 +1525,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1368,
+        "top": 1406,
         "left": 1026,
         "width": 608,
-        "height": 380
+        "height": 342
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -1725,7 +1725,7 @@
         "top": 1862,
         "left": 0,
         "width": 608,
-        "height": 380
+        "height": 418
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -1915,10 +1915,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2242,
+        "top": 2280,
         "left": 0,
         "width": 608,
-        "height": 380
+        "height": 342
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -2099,7 +2099,7 @@
         "top": 114,
         "left": 2052,
         "width": 608,
-        "height": 380
+        "height": 418
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -2188,10 +2188,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 494,
+        "top": 532,
         "left": 2052,
         "width": 608,
-        "height": 380
+        "height": 342
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -2501,7 +2501,7 @@
         "top": 988,
         "left": 2052,
         "width": 608,
-        "height": 380
+        "height": 418
       },
       "tileFilter": {},
       "customName": "Data explorer results",
@@ -2587,10 +2587,10 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1368,
+        "top": 1406,
         "left": 2052,
         "width": 608,
-        "height": 380
+        "height": 342
       },
       "tileFilter": {},
       "customName": "Data explorer results",
