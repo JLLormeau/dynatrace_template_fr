@@ -1,9 +1,9 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.256.123.20221216-133150"
+    "clusterVersion": "1.257.164.20221230-102519"
   },
   "id": "bbbbbbbb-a003-a017-0009-000000000133",
   "dashboardMetadata": {
@@ -14,6 +14,7 @@
       "Configurator",
       "smarter"
     ],
+    "popularity": 1,
     "hasConsistentColors": false
   },
   "tiles": [
