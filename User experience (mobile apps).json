@@ -1,9 +1,9 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.256.123.20221216-133150"
+    "clusterVersion": "1.257.164.20221230-102519"
   },
   "id": "bbbbbbbb-a003-a017-0003-000000000133",
   "dashboardMetadata": {
@@ -14,6 +14,7 @@
       "Configurator",
       "smarter"
     ],
+    "popularity": 1,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -1514,6 +1515,19 @@
       "limit": 50
     },
     {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1520,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
+    },
+    {
       "name": "ApdexCategory",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -1529,25 +1543,41 @@
         {
           "id": "A",
           "timeAggregation": "DEFAULT",
-          "splitBy": [],
+          "splitBy": [
+            "Apdex category"
+          ],
           "metricSelector": "builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
           "enabled": true
         }
       ],
       "visualConfig": {
-        "type": "GRAPH_CHART",
+        "type": "STACKED_AREA",
         "global": {
           "hideLegend": false
         },
         "rules": [
           {
             "matcher": "A:",
+            "unitTransform": "auto",
             "valueFormat": "auto",
             "properties": {
               "color": "DEFAULT",
               "seriesType": "STACKED_AREA"
             },
-            "seriesOverrides": []
+            "seriesOverrides": [
+              {
+                "name": "SATISFIED",
+                "color": "#008000"
+              },
+              {
+                "name": "FRUSTRATED",
+                "color": "#FF0000"
+              },
+              {
+                "name": "TOLERATING",
+                "color": "#f5d30f"
+              }
+            ]
           }
         ],
         "axes": {
@@ -1625,22 +1655,41 @@
         {
           "id": "A",
           "timeAggregation": "DEFAULT",
-          "splitBy": [],
+          "splitBy": [
+            "Apdex category"
+          ],
           "metricSelector": "builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
           "enabled": true
         }
       ],
       "visualConfig": {
         "type": "TOP_LIST",
-        "global": {},
+        "global": {
+          "hideLegend": false
+        },
         "rules": [
           {
             "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
             "properties": {
               "color": "DEFAULT",
               "seriesType": "STACKED_AREA"
             },
-            "seriesOverrides": []
+            "seriesOverrides": [
+              {
+                "name": "SATISFIED",
+                "color": "#008000"
+              },
+              {
+                "name": "FRUSTRATED",
+                "color": "#ab0c17"
+              },
+              {
+                "name": "TOLERATING",
+                "color": "#f5d30f"
+              }
+            ]
           }
         ],
         "axes": {
@@ -1666,10 +1715,13 @@
                 "color": "#dc172a"
               }
             ],
+            "queryId": "",
             "visible": true
           }
         ],
-        "tableSettings": {},
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
         "graphChartSettings": {
           "connectNulls": false
         },
@@ -1685,19 +1737,6 @@
       "metricExpressions": [
         "resolution=Inf&(builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
       ]
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1520,
-        "width": 266,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     }
   ]
 }

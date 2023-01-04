@@ -1,9 +1,9 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.256.123.20221216-133150"
+    "clusterVersion": "1.257.164.20221230-102519"
   },
   "id": "bbbbbbbb-a003-a017-0004-000000000133",
   "dashboardMetadata": {
@@ -14,6 +14,7 @@
       "Configurator",
       "smarter"
     ],
+    "popularity": 1,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -1669,7 +1670,107 @@
       "markdown": "----"
     },
     {
-      "name": "Unsuccessful rate",
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1520,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
+    },
+    {
+      "name": "Failure rate",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Tests : Successful / Failed",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.synthetic_test"
+          ],
+          "metricSelector": "(100- builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(sum,descending)):limit(20)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "RED",
+              "seriesType": "AREA"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS",
+          "xAxisBuckets": 60
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&((100 - builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(sum,descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Failure rate",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1687,7 +1788,7 @@
           "splitBy": [
             "dt.entity.synthetic_test"
           ],
-          "metricSelector": "(100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.synthetic_test\"):sort(value(auto,descending)):limit(20)",
+          "metricSelector": "(100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.synthetic_test\"):sort(value(sum,descending)):limit(20)",
           "enabled": true
         }
       ],
@@ -1715,7 +1816,8 @@
           "yAxes": []
         },
         "heatmapSettings": {
-          "yAxis": "DIMENSIONS"
+          "yAxis": "DIMENSIONS",
+          "xAxisBuckets": 60
         },
         "thresholds": [
           {
@@ -1751,105 +1853,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=null&((100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.synthetic_test\"):sort(value(auto,descending)):limit(20)):limit(100):names"
+        "resolution=null&((100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.synthetic_test\"):sort(value(sum,descending)):limit(20)):limit(100):names"
       ]
-    },
-    {
-      "name": "Unsuccessful rate",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 0,
-        "width": 988,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": "Tests : Successful / Failed",
-      "queries": [
-        {
-          "id": "A",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "metricSelector": "(100- builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(auto,descending)):limit(20)",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "HEATMAP",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "unitTransform": "auto",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "RED",
-              "seriesType": "AREA"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "DIMENSIONS"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&((100 - builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(auto,descending)):limit(20)):limit(100):names"
-      ]
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1520,
-        "width": 266,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     }
   ]
 }
