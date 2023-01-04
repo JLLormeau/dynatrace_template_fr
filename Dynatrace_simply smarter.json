@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.256.123.20221216-133150"
+    "clusterVersion": "1.257.164.20221230-102519"
   },
   "id": "bbbbbbbb-a003-a017-0000-000000000133",
   "dashboardMetadata": {
@@ -15,6 +15,7 @@
       "smarter"
     ],
     "preset": true,
+    "popularity": 1,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -319,7 +320,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1824,
+        "left": 1710,
         "width": 152,
         "height": 152
       },
@@ -496,7 +497,7 @@
       "bounds": {
         "top": 38,
         "left": 1102,
-        "width": 266,
+        "width": 152,
         "height": 152
       },
       "tileFilter": {},
@@ -586,7 +587,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1672,
+        "left": 1558,
         "width": 152,
         "height": 152
       },
@@ -697,7 +698,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1368,
+        "left": 1254,
         "width": 152,
         "height": 152
       },
@@ -808,7 +809,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1520,
+        "left": 1406,
         "width": 152,
         "height": 152
       },
