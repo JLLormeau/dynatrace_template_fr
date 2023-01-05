@@ -1,5 +1,5 @@
 # Dynatrace: simply smarter
-Designed by Dynatrace ACE France / JLL + ANF + ELA + JET  
+Designed by Dynatrace ACE Services France / JLL + ANF + ELA + JET  
 Latest update : 2023/01/05
 
 NEW : `SLO Simply Smarter` & `SLO Resource Optimization` 
