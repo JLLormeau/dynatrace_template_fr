@@ -1,4 +1,4 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
@@ -1054,8 +1054,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20))"
+        "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20))"
       ]
     },
     {
@@ -1747,7 +1747,7 @@
       "markdown": "## [Database Success Rate](/ui/diagnostictools/mda?mdaId=topdb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%103%110)\n\n\n---"
     },
     {
-      "name": "Database  success rate",
+      "name": "Database error rate",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -1836,7 +1836,7 @@
       ]
     },
     {
-      "name": "Database  success rate",
+      "name": "Database error rate",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -1928,7 +1928,7 @@
       ]
     },
     {
-      "name": "Total of failure",
+      "name": "Failure rate",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2549,7 +2549,7 @@
       ]
     },
     {
-      "name": "Response time database",
+      "name": "Response time",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2742,7 +2742,7 @@
       ]
     },
     {
-      "name": "Response time database",
+      "name": "Response time",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
