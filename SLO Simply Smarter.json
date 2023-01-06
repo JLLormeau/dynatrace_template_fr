@@ -958,11 +958,11 @@
                 "nestedFilters": [],
                 "criteria": [
                   {
-                    "value": "WEB_SERVICE",
+                    "value": "WEB_REQUEST_SERVICE",
                     "evaluator": "IN"
                   },
                   {
-                    "value": "WEB_REQUEST_SERVICE",
+                    "value": "WEB_SERVICE",
                     "evaluator": "IN"
                   }
                 ]
@@ -2086,7 +2086,7 @@
       "markdown": "\n## 1. Heatmap for entities sort by activity for the chosen period (default 2 hours) and the seleted Management Zone (default ALL)\n\n## 2. KPI for all entities of the management zone and period selected\n\n## 2. KPI for the worst entities of the management zone and period selected\n\n## 4. The same SLO evaluated over 1 week, 1 month and 1 year. \n"
     },
     {
-      "name": "Response time",
+      "name": "Response time (Burn Rate)",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2549,7 +2549,7 @@
       ]
     },
     {
-      "name": "Response time",
+      "name": "Response time (Burn Rate)",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2641,107 +2641,6 @@
       ]
     },
     {
-      "name": "Response time (0,5 & 5 sec)",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 114,
-        "left": 1634,
-        "width": 380,
-        "height": 190
-      },
-      "tileFilter": {},
-      "customName": "ApdexCategory",
-      "queries": [
-        {
-          "id": "A",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "perf"
-          ],
-          "metricSelector": "builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(500)),value(\"Fast Burn Rate\",gt(5000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TOP_LIST",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "unitTransform": "auto",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "STACKED_AREA"
-            },
-            "seriesOverrides": [
-              {
-                "name": "Fast Burn Rate",
-                "color": "#f5d30f"
-              },
-              {
-                "name": "Slow Burn Rate",
-                "color": "#FF0000"
-              },
-              {
-                "name": "SLO Target",
-                "color": "#006613"
-              }
-            ]
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "displayName": "",
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&(builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(500)),value(\"Fast Burn Rate\",gt(5000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))):limit(100):names:fold(auto)"
-      ]
-    },
-    {
       "name": "Response time",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
@@ -2829,6 +2728,107 @@
       },
       "metricExpressions": [
         "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Response time (0,5 & 5 sec)",
+      "nameSize": "",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 1634,
+        "width": 380,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "perf"
+          ],
+          "metricSelector": "builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(500)),value(\"Fast Burn Rate\",gt(5000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": [
+              {
+                "name": "Slow Burn Rate",
+                "color": "#f5d30f"
+              },
+              {
+                "name": "Fast Burn Rate",
+                "color": "#FF0000"
+              },
+              {
+                "name": "SLO Target",
+                "color": "#006613"
+              }
+            ]
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(500)),value(\"Fast Burn Rate\",gt(5000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))):limit(100):names:fold(auto)"
       ]
     }
   ]
