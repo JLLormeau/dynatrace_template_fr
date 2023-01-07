@@ -96,20 +96,6 @@
       "tileFilter": {}
     },
     {
-      "name": "Application health",
-      "nameSize": "small",
-      "tileType": "APPLICATIONS",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 190,
-        "width": 152,
-        "height": 152
-      },
-      "tileFilter": {},
-      "chartVisible": true
-    },
-    {
       "name": "Service health",
       "nameSize": "small",
       "tileType": "SERVICES",
@@ -524,7 +510,7 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Check",
-        "defaultName": "Browser synthetic monitor",
+        "defaultName": "Browser Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
@@ -533,6 +519,9 @@
         },
         "filtersPerEntityType": {
           "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ],
             "WEBCHECK_TYPE": [
               "Availability"
             ]
@@ -1943,7 +1932,7 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Clickpath",
-        "defaultName": "Browser clickpath synthetic monitor",
+        "defaultName": "Browser clickpath Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
@@ -1952,8 +1941,43 @@
         },
         "filtersPerEntityType": {
           "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ],
             "WEBCHECK_TYPE": [
               "Clickpath"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "",
+      "nameSize": "small",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 190,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "APPLICATION",
+        "customName": "Applications",
+        "defaultName": "Monitored applications",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "APPLICATION": {
+            "APPLICATION_STATUS": [
+              "0"
             ]
           }
         }

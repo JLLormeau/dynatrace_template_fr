@@ -1,4 +1,4 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
@@ -169,20 +169,6 @@
       },
       "tileFilter": {},
       "markdown": "- - - "
-    },
-    {
-      "name": "Application health",
-      "nameSize": "small",
-      "tileType": "APPLICATIONS",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 228,
-        "width": 152,
-        "height": 152
-      },
-      "tileFilter": {},
-      "chartVisible": true
     },
     {
       "name": "Service health",
@@ -440,14 +426,20 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
-        "defaultName": "Synthetic monitor",
+        "defaultName": "Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
           "series": [],
           "resultMetadata": {}
         },
-        "filtersPerEntityType": {}
+        "filtersPerEntityType": {
+          "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ]
+          }
+        }
       },
       "chartVisible": true
     },
@@ -2708,6 +2700,38 @@
       "metricExpressions": [
         "resolution=Inf&(builtin:containers.cpu.usageSystemMilliCores:splitBy(\"dt.entity.container_group_instance\"):sort(value(auto,descending)):limit(20)):limit(100):names"
       ]
+    },
+    {
+      "name": "",
+      "nameSize": "small",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 228,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "APPLICATION",
+        "customName": "Applications",
+        "defaultName": "Monitored applications",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "APPLICATION": {
+            "APPLICATION_STATUS": [
+              "0"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
     }
   ]
 }

@@ -365,20 +365,6 @@
       "markdown": "- - - "
     },
     {
-      "name": "Application health",
-      "nameSize": "small",
-      "tileType": "APPLICATIONS",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 228,
-        "width": 152,
-        "height": 152
-      },
-      "tileFilter": {},
-      "chartVisible": true
-    },
-    {
       "name": "Web services",
       "tileType": "HEADER",
       "configured": true,
@@ -566,14 +552,20 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
-        "defaultName": "Synthetic monitor",
+        "defaultName": "Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
           "series": [],
           "resultMetadata": {}
         },
-        "filtersPerEntityType": {}
+        "filtersPerEntityType": {
+          "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ]
+          }
+        }
       },
       "chartVisible": true
     },
@@ -4503,6 +4495,37 @@
       "metricExpressions": [
         "resolution=Inf&(builtin:service.keyRequest.errors.server.rate:filter(and(or(in(\"dt.entity.service_method\",entitySelector(\"type(service_method),fromRelationship.isServiceMethodOfService(type(SERVICE),serviceType(~\"WEB_SERVICE~\"))\"))))):splitBy(\"dt.entity.service_method\"):sort(value(auto,descending)):limit(20)):limit(100):names"
       ]
+    },
+    {
+      "name": "",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 228,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "APPLICATION",
+        "customName": "Applications",
+        "defaultName": "Monitored applications",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "APPLICATION": {
+            "APPLICATION_STATUS": [
+              "0"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
     }
   ]
 }

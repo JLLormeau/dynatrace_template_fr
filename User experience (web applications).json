@@ -569,8 +569,8 @@
       "tileFilter": {},
       "filterConfig": {
         "type": "APPLICATION",
-        "customName": "",
-        "defaultName": "Web  applications",
+        "customName": "Web applications",
+        "defaultName": "Monitored Web  applications",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
@@ -580,6 +580,9 @@
         "filtersPerEntityType": {
           "APPLICATION": {
             "APPLICATION_TYPE": [
+              "0"
+            ],
+            "APPLICATION_STATUS": [
               "0"
             ]
           }
@@ -602,14 +605,20 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
-        "defaultName": "Synthetic monitor",
+        "defaultName": "Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
           "series": [],
           "resultMetadata": {}
         },
-        "filtersPerEntityType": {}
+        "filtersPerEntityType": {
+          "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ]
+          }
+        }
       },
       "chartVisible": true
     },

@@ -96,20 +96,6 @@
       "tileFilter": {}
     },
     {
-      "name": "Application health",
-      "nameSize": "small",
-      "tileType": "APPLICATIONS",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 228,
-        "width": 152,
-        "height": 152
-      },
-      "tileFilter": {},
-      "chartVisible": true
-    },
-    {
       "name": "Service health",
       "nameSize": "small",
       "tileType": "SERVICES",
@@ -366,7 +352,7 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "HTTP synthetic",
-        "defaultName": "HTTP synthetic monitor",
+        "defaultName": "HTTP Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
@@ -375,6 +361,9 @@
         },
         "filtersPerEntityType": {
           "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ],
             "WEBCHECK_TYPE": [
               "Basic HTTP"
             ]
@@ -1988,6 +1977,38 @@
       "metricExpressions": [
         "resolution=null&((100 - builtin:synthetic.http.availability.location.total:splitBy(\"dt.entity.synthetic_location\")):sort(value(sum,descending)):limit(20)):limit(100):names"
       ]
+    },
+    {
+      "name": "",
+      "nameSize": "small",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 228,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "APPLICATION",
+        "customName": "Applications",
+        "defaultName": "Monitored applications",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "APPLICATION": {
+            "APPLICATION_STATUS": [
+              "0"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
     }
   ]
 }

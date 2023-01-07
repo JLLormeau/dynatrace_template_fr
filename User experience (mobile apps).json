@@ -501,8 +501,8 @@
       "tileFilter": {},
       "filterConfig": {
         "type": "APPLICATION",
-        "customName": "",
-        "defaultName": "Mobile apps ",
+        "customName": "Mobile apps",
+        "defaultName": "Monitored Mobile apps ",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
@@ -513,6 +513,9 @@
           "APPLICATION": {
             "APPLICATION_TYPE": [
               "1"
+            ],
+            "APPLICATION_STATUS": [
+              "0"
             ]
           }
         }
@@ -534,14 +537,20 @@
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
-        "defaultName": "Synthetic monitor",
+        "defaultName": "Active synthetic monitor",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
           "series": [],
           "resultMetadata": {}
         },
-        "filtersPerEntityType": {}
+        "filtersPerEntityType": {
+          "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ]
+          }
+        }
       },
       "chartVisible": true
     },
@@ -1048,7 +1057,7 @@
       "filterConfig": {
         "type": "APPLICATION",
         "customName": "Custom app",
-        "defaultName": "Custom  applications",
+        "defaultName": "Monitored Custom  applications",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
@@ -1059,6 +1068,9 @@
           "APPLICATION": {
             "APPLICATION_TYPE": [
               "4"
+            ],
+            "APPLICATION_STATUS": [
+              "0"
             ]
           }
         }
