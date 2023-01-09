@@ -1,4 +1,4 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
@@ -14,7 +14,7 @@
       "Configurator",
       "smarter"
     ],
-    "popularity": 1,
+    "popularity": 2,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -2709,240 +2709,6 @@
       ]
     },
     {
-      "name": "Success rate (time series)",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 570,
-        "left": 646,
-        "width": 342,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": "Success rate (time series)",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:service.successes.server.rate",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.service"
-          ],
-          "sortBy": "ASC",
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [
-              {
-                "filter": "dt.entity.service",
-                "filterType": "ENTITY_ATTRIBUTE",
-                "filterOperator": "OR",
-                "entityAttribute": "servicetype",
-                "nestedFilters": [],
-                "criteria": [
-                  {
-                    "value": "WEB_REQUEST_SERVICE",
-                    "evaluator": "IN"
-                  }
-                ]
-              }
-            ],
-            "criteria": []
-          },
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "displayName": "",
-            "visible": true
-          },
-          "yAxes": [
-            {
-              "displayName": "",
-              "visible": true,
-              "min": "AUTO",
-              "max": "AUTO",
-              "position": "LEFT",
-              "queryIds": [
-                "A"
-              ],
-              "defaultAxis": true
-            }
-          ]
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
-      ]
-    },
-    {
-      "name": "Success rate (time series)",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 570,
-        "left": 1672,
-        "width": 342,
-        "height": 304
-      },
-      "tileFilter": {},
-      "customName": "Success rate (time series)",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:service.successes.server.rate",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.service"
-          ],
-          "sortBy": "ASC",
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [
-              {
-                "filter": "dt.entity.service",
-                "filterType": "ENTITY_ATTRIBUTE",
-                "filterOperator": "OR",
-                "entityAttribute": "servicetype",
-                "nestedFilters": [],
-                "criteria": [
-                  {
-                    "value": "WEB_SERVICE",
-                    "evaluator": "IN"
-                  }
-                ]
-              }
-            ],
-            "criteria": []
-          },
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "displayName": "",
-            "visible": true
-          },
-          "yAxes": [
-            {
-              "displayName": "",
-              "visible": true,
-              "min": "AUTO",
-              "max": "AUTO",
-              "position": "LEFT",
-              "queryIds": [
-                "A"
-              ],
-              "defaultAxis": true
-            }
-          ]
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
-      ]
-    },
-    {
       "name": "Top response time (90%tile)",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -4526,6 +4292,246 @@
         }
       },
       "chartVisible": true
+    },
+    {
+      "name": "Success rate (time series)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1672,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Success rate (time series)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.successes.server.rate",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "sortBy": "ASC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "WEB_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "0",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "100",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Success rate (time series)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 646,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Success rate (time series)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.successes.server.rate",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "sortBy": "ASC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "WEB_REQUEST_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "0",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "100",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
+      ]
     }
   ]
 }
