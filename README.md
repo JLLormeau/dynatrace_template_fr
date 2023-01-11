@@ -3,7 +3,7 @@ Designed by Dynatrace ACE Services France / JLL + ANF + ELA + JET
 Latest update : 2023/01/09
 
 NEW : `SLO Simply Smarter` & `SLO Resource Optimization` 
- - for more detail click [here](https://github.com/dynatrace-ace-services/slo-simply-smarter/blob/main/README.md)
+ - for more detail to the installation and update click [here](https://github.com/dynatrace-ace-services/slo-simply-smarter/blob/main/README.md)
 
 
 A set of dashboards from beginners to experts, designed to show the main KPI of your applications and services filtered on the management zone.
