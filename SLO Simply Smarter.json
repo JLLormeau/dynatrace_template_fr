@@ -1,9 +1,9 @@
-{
+ {
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.257.164.20221230-102519"
+    "clusterVersion": "1.258.79.20230118-123130"
   },
   "id": "bbbbbbbb-a003-a017-0008-000000000133",
   "dashboardMetadata": {
@@ -14,7 +14,7 @@
       "Configurator",
       "smarter"
     ],
-    "popularity": 1,
+    "popularity": 2,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -167,6 +167,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -237,185 +238,6 @@
       },
       "metricExpressions": [
         "resolution=Inf&(builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
-      ]
-    },
-    {
-      "name": "Apdex",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 114,
-        "left": 0,
-        "width": 608,
-        "height": 418
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [
-        {
-          "id": "A",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.application"
-          ],
-          "metricSelector": "builtin:apps.web.apdex.userType.geoBig:splitBy(\"dt.entity.application\"):sort(value(count,descending)):limit(20)",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "HEATMAP",
-        "global": {
-          "hideLegend": true
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "DIMENSIONS",
-          "xAxisBuckets": 60,
-          "showLabels": true
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "value": 0.85,
-                "color": "#7dc540"
-              },
-              {
-                "value": 0.5,
-                "color": "#f5d30f"
-              },
-              {
-                "value": 0,
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&(builtin:apps.web.apdex.userType.geoBig:splitBy(\"dt.entity.application\"):sort(value(count,descending)):limit(20)):limit(100):names"
-      ]
-    },
-    {
-      "name": "Apdex",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 532,
-        "left": 0,
-        "width": 608,
-        "height": 342
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [
-        {
-          "id": "A",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.application"
-          ],
-          "metricSelector": "builtin:apps.web.apdex.userType.geoBig:splitBy(\"dt.entity.application\"):sort(value(avg,ascending)):limit(20)",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TABLE",
-        "global": {
-          "hideLegend": true
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "DIMENSIONS",
-          "xAxisBuckets": 60,
-          "showLabels": true
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "columnId": "Apdex (by geolocation, user type) [web]",
-            "rules": [
-              {
-                "value": 0.85,
-                "color": "#7dc540"
-              },
-              {
-                "value": 0.5,
-                "color": "#f5d30f"
-              },
-              {
-                "value": 0,
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "A",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": true
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&(builtin:apps.web.apdex.userType.geoBig:splitBy(\"dt.entity.application\"):sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -527,7 +349,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 912,
+        "top": 1786,
         "left": 0,
         "width": 988,
         "height": 76
@@ -541,7 +363,7 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 1216,
+        "top": 2090,
         "left": 608,
         "width": 380,
         "height": 152
@@ -559,7 +381,7 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 1406,
+        "top": 2280,
         "left": 608,
         "width": 380,
         "height": 152
@@ -577,7 +399,7 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 1596,
+        "top": 2470,
         "left": 608,
         "width": 380,
         "height": 152
@@ -595,7 +417,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1178,
+        "top": 2052,
         "left": 608,
         "width": 380,
         "height": 38
@@ -607,7 +429,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1368,
+        "top": 2242,
         "left": 608,
         "width": 380,
         "height": 38
@@ -619,7 +441,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1558,
+        "top": 2432,
         "left": 608,
         "width": 380,
         "height": 38
@@ -632,7 +454,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 988,
+        "top": 1862,
         "left": 608,
         "width": 380,
         "height": 190
@@ -654,6 +476,7 @@
             "criteria": []
           },
           "limit": 20,
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -739,7 +562,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1406,
+        "top": 2280,
         "left": 0,
         "width": 608,
         "height": 342
@@ -754,6 +577,7 @@
             "dt.entity.http_check"
           ],
           "metricSelector": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.http_check\"):sort(value(auto,ascending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -958,11 +782,11 @@
                 "nestedFilters": [],
                 "criteria": [
                   {
-                    "value": "WEB_REQUEST_SERVICE",
+                    "value": "WEB_SERVICE",
                     "evaluator": "IN"
                   },
                   {
-                    "value": "WEB_SERVICE",
+                    "value": "WEB_REQUEST_SERVICE",
                     "evaluator": "IN"
                   }
                 ]
@@ -971,6 +795,7 @@
             "criteria": []
           },
           "limit": 20,
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1079,6 +904,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1157,7 +983,7 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 2090,
+        "top": 1216,
         "left": 608,
         "width": 380,
         "height": 152
@@ -1175,7 +1001,7 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 2280,
+        "top": 1406,
         "left": 608,
         "width": 380,
         "height": 152
@@ -1193,7 +1019,7 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 2470,
+        "top": 1596,
         "left": 608,
         "width": 380,
         "height": 152
@@ -1211,7 +1037,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2052,
+        "top": 1178,
         "left": 608,
         "width": 380,
         "height": 38
@@ -1223,7 +1049,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2242,
+        "top": 1368,
         "left": 608,
         "width": 380,
         "height": 38
@@ -1235,7 +1061,7 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 2432,
+        "top": 1558,
         "left": 608,
         "width": 380,
         "height": 38
@@ -1247,7 +1073,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 1786,
+        "top": 912,
         "left": 0,
         "width": 988,
         "height": 76
@@ -1261,7 +1087,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1862,
+        "top": 988,
         "left": 0,
         "width": 608,
         "height": 418
@@ -1276,6 +1102,7 @@
             "dt.entity.synthetic_test"
           ],
           "metricSelector": "builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.synthetic_test\"):sort(value(auto,ascending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1350,7 +1177,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1862,
+        "top": 988,
         "left": 608,
         "width": 380,
         "height": 190
@@ -1363,6 +1190,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "(100-(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy())):auto:setUnit(Percent)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1454,7 +1282,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 2280,
+        "top": 1406,
         "left": 0,
         "width": 608,
         "height": 342
@@ -1469,6 +1297,7 @@
             "dt.entity.synthetic_test"
           ],
           "metricSelector": "builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.synthetic_test\"):sort(value(auto,ascending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1767,6 +1596,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1856,6 +1686,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1925,112 +1756,6 @@
       },
       "metricExpressions": [
         "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)):limit(100):names"
-      ]
-    },
-    {
-      "name": "Failure rate",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 988,
-        "left": 2660,
-        "width": 380,
-        "height": 190
-      },
-      "tileFilter": {},
-      "customName": "ApdexCategory",
-      "queries": [
-        {
-          "id": "A",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.service"
-          ],
-          "metricSelector": "builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "SINGLE_VALUE",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "unitTransform": "auto",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "STACKED_AREA"
-            },
-            "seriesOverrides": [
-              {
-                "name": "Select series",
-                "color": "#008000"
-              },
-              {
-                "name": "Select series",
-                "color": "#f5d30f"
-              },
-              {
-                "name": "Select series",
-                "color": "#FF0000"
-              }
-            ]
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "singleValueSettings": {
-          "showTrend": true,
-          "showSparkLine": true,
-          "linkTileColorToThreshold": true
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20))"
       ]
     },
     {
@@ -2106,6 +1831,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(sum,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2198,6 +1924,7 @@
             "perf"
           ],
           "metricSelector": "builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(100)),value(\"Fast Burn Rate\",gt(1000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2298,6 +2025,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):auto:splitBy(\"dt.entity.service\"):sort(value(percentile(90),descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2391,6 +2119,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(sum,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2465,7 +2194,7 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 988,
+        "top": 1862,
         "left": 0,
         "width": 608,
         "height": 418
@@ -2480,6 +2209,7 @@
             "dt.entity.http_check"
           ],
           "metricSelector": "builtin:synthetic.http.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.http_check\"):sort(value(sum,ascending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2569,6 +2299,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(sum,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2661,6 +2392,7 @@
             "dt.entity.service"
           ],
           "metricSelector": "builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2751,6 +2483,7 @@
             "perf"
           ],
           "metricSelector": "builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(500)),value(\"Fast Burn Rate\",gt(5000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2829,6 +2562,291 @@
       },
       "metricExpressions": [
         "resolution=null&(builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):partition(perf,value(\"SLO Target\",lt(500)),value(\"Fast Burn Rate\",gt(5000)),value(\"Slow Burn Rate\",otherwise)):splitBy(perf):count:sort(value(sum,descending))):limit(100):names:fold(auto)"
+      ]
+    },
+    {
+      "name": "Failure rate",
+      "nameSize": "",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 988,
+        "left": 2660,
+        "width": 380,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": [
+              {
+                "name": "Select series",
+                "color": "#008000"
+              },
+              {
+                "name": "Select series",
+                "color": "#f5d30f"
+              },
+              {
+                "name": "Select series",
+                "color": "#FF0000"
+              }
+            ]
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "singleValueSettings": {
+          "showTrend": true,
+          "showSparkLine": true,
+          "linkTileColorToThreshold": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy():sort(value(auto,descending)):limit(20))"
+      ]
+    },
+    {
+      "name": "Apdex",
+      "nameSize": "",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 0,
+        "width": 608,
+        "height": 418
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.application"
+          ],
+          "metricSelector": "builtin:apps.web.apdex.userType:splitby(\"dt.entity.application\"):sort(value(count,descending)):limit(20)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS",
+          "xAxisBuckets": 60,
+          "showLabels": false
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.85,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.5,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:apps.web.apdex.userType:splitBy(\"dt.entity.application\"):sort(value(count,descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Apdex",
+      "nameSize": "",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 0,
+        "width": 608,
+        "height": 342
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.application"
+          ],
+          "metricSelector": "(100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TABLE",
+        "global": {
+          "hideLegend": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS",
+          "xAxisBuckets": 60,
+          "showLabels": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.85,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.5,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "A",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": true
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&((100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     }
   ]
