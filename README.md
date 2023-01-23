@@ -8,10 +8,10 @@ NEW : `SLO Simply Smarter` & `SLO Resource Optimization`
 
 A set of dashboards from beginners to experts, designed to show the main KPI of your applications and services filtered on the management zone.
 ## Main Dashboard
-![Dynatrace Simply Smarter](Dynatrace_Simply_Smarter.png)
+![Dynatrace simply smarter](Dynatrace_simply_smarter.png)
 
 ## Project centric => filter by management zone
-![Dynatrace Simply Smarter2](Dynatrace_Simply_Smarter2.png)
+![Dynatrace simply smarter2](Dynatrace_simply_smarter2.png)
 
 ## SLO Simply Smarter
 ![SLO Simply Smarter](SLO_Simply_Smarter.png)
