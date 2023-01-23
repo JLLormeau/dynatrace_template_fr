@@ -639,6 +639,7 @@
     },
     {
       "name": "Smartscape",
+      "nameSize": "small",
       "tileType": "PURE_MODEL",
       "configured": true,
       "bounds": {
@@ -651,6 +652,7 @@
     },
     {
       "name": "Vulnerabilities (last value)",
+      "nameSize": "small",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
