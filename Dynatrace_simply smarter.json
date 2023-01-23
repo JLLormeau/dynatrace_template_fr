@@ -427,7 +427,7 @@
       "bounds": {
         "top": 38,
         "left": 1102,
-        "width": 228,
+        "width": 266,
         "height": 152
       },
       "tileFilter": {},
@@ -657,8 +657,8 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1330,
-        "width": 304,
+        "left": 1368,
+        "width": 266,
         "height": 152
       },
       "tileFilter": {},
