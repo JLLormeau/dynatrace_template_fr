@@ -1,9 +1,9 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.257.164.20221230-102519"
+    "clusterVersion": "1.258.87.20230120-140924"
   },
   "id": "bbbbbbbb-a003-a017-0009-000000000133",
   "dashboardMetadata": {
@@ -15,6 +15,7 @@
       "smarter"
     ],
     "popularity": 1,
+	"preset": true,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -77,6 +78,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.mem.usage:splitBy(\"dt.entity.host\"):sort(value(sum,descending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -166,6 +168,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:host.mem.usage:splitBy():sort(value(auto,ascending))",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -354,6 +357,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.mem.usage:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -363,6 +367,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.mem.usage:splitBy(\"dt.entity.host\"):min:auto:sort(value(max,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -372,6 +377,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.mem.usage:splitBy(\"dt.entity.host\"):max:auto:sort(value(max,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -381,6 +387,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.mem.used:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -390,6 +397,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.mem.total:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -536,6 +544,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):sort(value(sum,descending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -625,6 +634,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:host.cpu.usage:splitBy():sort(value(auto,ascending))",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -830,6 +840,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -839,6 +850,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):min:auto:sort(value(auto,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -848,6 +860,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):max:auto:sort(value(auto,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -996,6 +1009,7 @@
             "dt.entity.disk"
           ],
           "metricSelector": "builtin:host.disk.usedPct:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):sort(value(sum,descending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1113,6 +1127,7 @@
             "criteria": []
           },
           "limit": 100,
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1319,6 +1334,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.disk.usedPct:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1328,6 +1344,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "(builtin:host.disk.usedPct:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):max:auto:limit(100))",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1337,6 +1354,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.disk.usedPct:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):min:auto:limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1346,6 +1364,7 @@
             "dt.entity.host"
           ],
           "metricSelector": "builtin:host.disk.avail:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1501,6 +1520,7 @@
             "dt.entity.process_group_instance"
           ],
           "metricSelector": "(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):sort(value(auto,descending)):limit(100))/(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):limit(100))",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1510,6 +1530,7 @@
             "dt.entity.process_group_instance"
           ],
           "metricSelector": "builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1519,6 +1540,7 @@
             "dt.entity.process_group_instance"
           ],
           "metricSelector": "builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1616,6 +1638,7 @@
             "dt.entity.process_group_instance"
           ],
           "metricSelector": "100-(builtin:tech.jvm.memory.runtime.free:splitBy(\"dt.entity.process_group_instance\"):sort(value(auto,descending)):limit(100))/(builtin:tech.jvm.memory.runtime.total:splitBy(\"dt.entity.process_group_instance\"):limit(100))*100",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1625,6 +1648,7 @@
             "dt.entity.process_group_instance"
           ],
           "metricSelector": "builtin:tech.jvm.memory.runtime.total:splitBy(\"dt.entity.process_group_instance\"):limit(100)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1634,6 +1658,7 @@
             "dt.entity.process_group_instance"
           ],
           "metricSelector": "builtin:tech.jvm.memory.runtime.free:splitBy(\"dt.entity.process_group_instance\"):limit(100)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1743,6 +1768,7 @@
             "dt.entity.process_group_instance"
           ],
           "limit": 100,
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1758,6 +1784,7 @@
             "criteria": []
           },
           "limit": 100,
+          "rate": "NONE",
           "enabled": true
         }
       ],

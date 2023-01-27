@@ -83,22 +83,6 @@
       "tileFilter": {}
     },
     {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 1710,
-        "left": 0,
-        "width": 342,
-        "height": 266
-      },
-      "tileFilter": {},
-      "customName": "Visits by browser",
-      "query": "SELECT browserMajorVersion, count(*) from usersession GROUP BY browserMajorVersion ORDER by count(*) DESC",
-      "type": "PIE_CHART",
-      "limit": 50
-    },
-    {
       "name": "Problems",
       "nameSize": "small",
       "tileType": "OPEN_PROBLEMS",
@@ -772,7 +756,7 @@
       ]
     },
     {
-      "name": " ",
+      "name": "Error count",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1189,7 +1173,7 @@
       "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     },
     {
-      "name": " ",
+      "name": "Apdex",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -2165,7 +2149,7 @@
       "image": "data:image/webp;base64,UklGRgYHAABXRUJQVlA4WAoAAAAgAAAAowEAPgAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggGAUAABAhAJ0BKqQBPwA+bTaWSCQjIiElt5mwgA2JZW7dXkuYVFTx2BY9G2cA82/TrqeBaRfgOjbC7rLfeP8Z5Cd58oI5B/Xv9V4Leq5dDceVGB6Iue36x9gf9bR7QPLdXn/qgM+1WW9PcfPZtXge+XnQlu5oWEylFVYwu15jT+A1tdmydoWaUGt9/ykPSq3NQcnDnOzikm/VzIb+LYoX/OM1s6FJ/tZm02x5avylFUGqf9xjY3eCb+46LaLBPmqV49ugA2b8s5TZ9WgU+X1tBv1S1q4SfQFmhzxjov2dlrkzWrawaIY0mqxKaoHC7mzWiyUTNu9XbxQE0tncnqglEi66JoRky9HrRkqgeBl3Pf/mcMCUAAD++6WF+1RwYGA2Fww2t04VwCWY5LY2VkTw779bZYbCEzZhOgRs1+8JKx0puUxyaderb8zlH61LYJhPShdrUrcVK1iNE9VzNvgLl1YQU/wlIJrgd//zeQf4a+A0E98h6vzkfXIAeHnzv9zjEcK2QYoRO904Ym4r6H/FffgJBJro8Ye/4cxGm8T+pnVmr8YNpXbcjbvaKv/piO70OUfDrhvd6MbD099Vjy9kbIQtLsJ3OCB11Mh+9jwm95L+HY4gTk6jZSgcPzIWM2kuFrpKAsSeoYiUABVIkTbi5ObGW/yVC6O0ArYXhK1tFeyrhbuk+nTBjo31pbk/lzF4JikH0Bf6XS3atzdP3ctyRWCcv9CJ75PVU8Er09M+w4MnfWH+dvt8IhJA86Hby5L2ABMzNZEDpCeMmeKWQDYbMlOzhGqlkA4R3ZfVH9OQn/rjYClNXQ6ACgTjlOp1/L5VD+33k2Zh7PQjTGBZWFRO6SeB/0Zx8wUfV0iRgdkVGwl2z+0CpPO/DmrP7owmVphkQnUjG3mS6VTNEvtY7VaYtrrujYAmUHPxhGVTaG9yK5MKSN1YAZjXqVSPIQA/9j3YwWFQQCvLSmfZ9j5cvihNB5v9LwzAD2SRTTZ+Vu42L7IHjoUDClxrMTIob8gACw7zQU42yeNCTmj7finz31BJ84+dXTPjvdWWjG0r/DawoyfMk3qhpSSF8+yzWNZOesxZoI25Yr1/NXRmGiMvda1dduVzHkywU6ecNeHID7Pl6I6UqoWJgf+Bv6zzeWf89davKCZhPF/lDBrvXkP0O13hg0jpWl+ELkX/ssIYKf00U8MAKBskMGy/kU7PF0wfnFOyxcbI7u1cxncmO4AgGP12xuAQ6gXZqcaleWKvjODHoTlCYhd7FGmSaADyLp0d5YFuD+liDI5QBHt7Ps8L3+lyFs5C/n4LgZ/nWg0wjf4lz/RdLNNOVN2jsy+bodzu0gn2xzsWnDoALvdMhN+1W43efEm4X66MpiF7YtAjbLflNQNtuhNQItrr+GJRYrm9ZHb8P3p4eFHlBD7BTMFpfW3weQYbuhBC/E58aoaa2RfPycPVf5zCA5ZR8oX1mLhMJVkU0Hi695MbeZVaLi5Lkp/e75Vg55G5y0Gv3QN3/4q/gDcK865dtF2/vQSDx/rn88P5ykmI36aENAG5h+01oOSpbGKWAGKmRb3/fVv7MKrOfnYBY7qxsGEPiJ+tzX5d79J5gufsiylxuprkWVl6xfmGs0lyjtfGHpxUqQb4WSzAF+oO7mrJupT3dxBwK+k6X477CSlZ+QifJjjleU8aAQBss5ESvjFpfldcH7Cfjnr6benEu/trT1ljBmap5vjChubOCrSA3HyCUAwIAAAA"
     },
     {
-      "name": " ",
+      "name": "User action Satisfied %",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2256,6 +2240,22 @@
       "metricExpressions": [
         "resolution=Inf&((builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 1710,
+        "left": 0,
+        "width": 342,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Visits by OS family",
+      "query": "SELECT osFamily, count(*) from usersession GROUP BY osFamily ORDER by count(*) DESC",
+      "type": "PIE_CHART",
+      "limit": 50
     }
   ]
 }

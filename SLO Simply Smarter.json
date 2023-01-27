@@ -15,6 +15,7 @@
       "smarter"
     ],
     "popularity": 3,
+	"preset": true,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -2351,7 +2352,7 @@
       ]
     },
     {
-      "name": "Apdex",
+      "name": "User action Satisfied %",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
