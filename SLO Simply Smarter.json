@@ -1,9 +1,9 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.258.79.20230118-123130"
+    "clusterVersion": "1.258.87.20230120-140924"
   },
   "id": "bbbbbbbb-a003-a017-0008-000000000133",
   "dashboardMetadata": {
@@ -14,7 +14,7 @@
       "Configurator",
       "smarter"
     ],
-    "popularity": 2,
+    "popularity": 3,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -2779,7 +2779,7 @@
           "splitBy": [
             "dt.entity.application"
           ],
-          "metricSelector": "(100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)",
+          "metricSelector": "(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)",
           "rate": "NONE",
           "enabled": true
         }
@@ -2792,8 +2792,12 @@
         "rules": [
           {
             "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "0,000",
             "properties": {
-              "color": "DEFAULT"
+              "color": "DEFAULT",
+              "seriesType": "LINE",
+              "alias": "Apdex"
             },
             "seriesOverrides": []
           }
@@ -2805,9 +2809,7 @@
           "yAxes": []
         },
         "heatmapSettings": {
-          "yAxis": "DIMENSIONS",
-          "xAxisBuckets": 60,
-          "showLabels": true
+          "yAxis": "VALUE"
         },
         "thresholds": [
           {
@@ -2846,7 +2848,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&((100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)):limit(100):names"
+        "resolution=Inf&((builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.application\"))/(builtin:apps.web.actionCount.category:splitBy(\"dt.entity.application\")):sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     }
   ]
