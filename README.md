@@ -10,8 +10,11 @@ A set of dashboards from beginners to experts, designed to show the main KPI of 
 ## Main Dashboard
 ![Dynatrace simply smarter](Dynatrace_simply_smarter.png)
 
-## Project centric => filter by management zone
+## Application centric => filter by management zone
 ![Dynatrace simply smarter2](Dynatrace_simply_smarter2.png)
+
+## Filtering -> Sorting -> Analysis
+![image](https://user-images.githubusercontent.com/40337213/216789866-3acc4d66-3242-40b1-9583-8a8e6fc6f6c0.png)
 
 ## SLO Simply Smarter
 ![SLO Simply Smarter](SLO_Simply_Smarter.png)
