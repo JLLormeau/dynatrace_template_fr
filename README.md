@@ -14,7 +14,7 @@ A set of dashboards from beginners to experts, designed to show the main KPI of 
 ![Dynatrace simply smarter2](Dynatrace_simply_smarter2.png)
 
 ## Overview
-![image](https://user-images.githubusercontent.com/40337213/216790125-14e420e6-10a3-437b-adb2-664e014cb901.png)
+![image](https://user-images.githubusercontent.com/40337213/216790213-601bb03e-03de-474a-9ab3-41bfad35961c.png)
 
 ## SLO Simply Smarter
 ![SLO Simply Smarter](SLO_Simply_Smarter.png)
