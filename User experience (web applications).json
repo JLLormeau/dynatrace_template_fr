@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.258.87.20230120-140924"
+    "clusterVersion": "1.260.137.20230220-113153"
   },
   "id": "bbbbbbbb-a003-a017-0002-000000000133",
   "dashboardMetadata": {
@@ -14,7 +14,7 @@
       "Configurator",
       "smarter"
     ],
-    "popularity": 2,
+    "popularity": 1,
     "hasConsistentColors": false
   },
   "tiles": [
@@ -29,6 +29,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000133)\n"
     },
     {
@@ -42,6 +43,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n***\n\n- ✅ [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n- [mobile or custom app](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000133)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000133) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
@@ -55,6 +57,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000133) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000133) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) "
     },
     {
@@ -68,7 +71,8 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](/ui/logs-events)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+      "isAutoRefreshDisabled": false,
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](ui/log-monitoring)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "🚦health",
@@ -80,7 +84,8 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Problems",
@@ -93,7 +98,8 @@
         "width": 152,
         "height": 152
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Service health",
@@ -107,6 +113,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -121,6 +128,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -135,6 +143,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -148,6 +157,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -160,7 +170,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "User actions",
@@ -172,7 +183,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Response time",
@@ -184,7 +196,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Errors",
@@ -196,7 +209,8 @@
         "width": 152,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -209,6 +223,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -221,7 +236,8 @@
         "width": 190,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -234,6 +250,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -246,7 +263,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Response time",
@@ -258,7 +276,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Top user action not satisfied ",
@@ -270,7 +289,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -283,6 +303,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -296,6 +317,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -308,7 +330,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -321,6 +344,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -333,7 +357,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Apdex",
@@ -345,7 +370,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -358,6 +384,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -371,6 +398,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -383,7 +411,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -396,6 +425,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -409,6 +439,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -422,6 +453,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -435,6 +467,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -447,7 +480,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -460,6 +494,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -473,6 +508,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " User actions",
       "query": "select count(*) as \" \" from useraction",
       "type": "SINGLE_VALUE",
@@ -490,6 +526,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "User sessions",
       "query": "select count(*) as \" \" from usersession",
       "type": "SINGLE_VALUE",
@@ -508,6 +545,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "US format (1,500 ms = 1.5 sec)",
       "query": "select AVG(duration) AS \" \" from useraction",
       "type": "SINGLE_VALUE",
@@ -524,7 +562,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -537,6 +576,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -551,6 +591,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "APPLICATION",
         "customName": "Web applications",
@@ -586,6 +627,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
@@ -617,6 +659,7 @@
         "height": 266
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Visits by city",
       "query": "SELECT city, count(*) from usersession where city is not null GROUP BY city ORDER by count(*) DESC",
       "type": "PIE_CHART",
@@ -633,6 +676,7 @@
         "height": 266
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Visits by user type",
       "query": "SELECT userType, count(*) AS \"number of visits\" from usersession GROUP BY usertype ORDER by count(*) DESC",
       "type": "TABLE",
@@ -649,6 +693,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -766,6 +811,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -845,6 +891,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -934,6 +981,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1045,6 +1093,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "ApdexCategory",
       "queries": [
         {
@@ -1136,6 +1185,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " Errors HTTP & JS",
       "query": "select count(*) as \" \"  from useraction where javaScriptErrorCount >=1 or requestErrorCount >=1 ",
       "type": "SINGLE_VALUE",
@@ -1153,6 +1203,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Sessions with rage click ",
       "query": "SELECT  COUNT(*) AS \" \" FROM usersession WHERE numberOfRageClicks>=1",
       "type": "SINGLE_VALUE",
@@ -1170,6 +1221,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     },
     {
@@ -1183,6 +1235,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1274,6 +1327,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " Top user actions Frustrated",
       "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"Frustrated user action\"  FROM useraction where usersession.applicationType IS \"WEB_APPLICATION\"  and apdexCategory IS \"FRUSTRATED\"  GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
       "type": "TABLE",
@@ -1291,6 +1345,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Top user actions with error (HTTP & Javascript)",
       "query": "SELECT top (useraction.name, 5) AS \"Name\", application AS \"Domaine\", COUNT(*) AS \"User action with error\"  FROM useraction where usersession.applicationType IS \"WEB_APPLICATION\"  and javaScriptErrorCount >=1 or requestErrorCount >=1 GROUP BY useraction.name, application   ORDER BY  count(*) DESC",
       "type": "TABLE",
@@ -1307,7 +1362,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -1320,6 +1376,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -1333,6 +1390,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -1423,6 +1481,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -1507,6 +1566,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -1600,6 +1660,7 @@
         "height": 266
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Slowest response time (visually complete)",
       "query": "SELECT usersession.ip AS\"IP\", usersession.userType AS\"UserType\", name AS\"UserActionName\", visuallyCompleteTime AS \"Slowest visually complete\", apdexCategory AS \"UserAction\", usersession.userExperienceScore AS \"UserSession\"  FROM useraction where usersession.applicationType IS \"WEB_APPLICATION\" ORDER BY visuallyCompleteTime    DESC ",
       "type": "TABLE",
@@ -1615,7 +1676,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -1628,6 +1690,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -1641,6 +1704,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -1810,6 +1874,7 @@
         "height": 114
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -1922,6 +1987,7 @@
         "height": 114
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Single value",
       "queries": [
         {
@@ -2021,6 +2087,7 @@
         "height": 114
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Single value",
       "queries": [
         {
@@ -2120,6 +2187,7 @@
         "height": 76
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "image": "data:image/webp;base64,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"
     },
     {
@@ -2133,6 +2201,7 @@
         "height": 76
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "image": "data:image/webp;base64,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"
     },
     {
@@ -2146,10 +2215,11 @@
         "height": 76
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "image": "data:image/webp;base64,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"
     },
     {
-      "name": "User action Satisfied %",
+      "name": "User action satisfied %",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2160,6 +2230,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -2252,6 +2323,7 @@
         "height": 266
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Visits by OS family",
       "query": "SELECT osFamily, count(*) from usersession GROUP BY osFamily ORDER by count(*) DESC",
       "type": "PIE_CHART",

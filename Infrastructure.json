@@ -1,9 +1,9 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.257.164.20221230-102519"
+    "clusterVersion": "1.260.137.20230220-113153"
   },
   "id": "bbbbbbbb-a003-a017-0007-000000000133",
   "dashboardMetadata": {
@@ -29,6 +29,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000133)\n"
     },
     {
@@ -42,6 +43,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n- [mobile or custom app](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000133)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000133) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
@@ -55,6 +57,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000133) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000133) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
     },
     {
@@ -68,7 +71,8 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- ✅ [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](/ui/logs-events)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+      "isAutoRefreshDisabled": false,
+      "markdown": "## 🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- ✅ [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](/ui/log-monitoring)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "Problems",
@@ -81,7 +85,8 @@
         "width": 152,
         "height": 152
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Host health",
@@ -95,6 +100,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -107,7 +113,8 @@
         "width": 342,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Network status",
@@ -119,7 +126,8 @@
         "width": 304,
         "height": 152
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "CPU",
@@ -131,7 +139,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Network",
@@ -143,7 +152,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Process CPU",
@@ -155,7 +165,8 @@
         "width": 342,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -168,6 +179,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -182,6 +194,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -196,6 +209,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -209,6 +223,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -222,6 +237,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -235,6 +251,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -248,6 +265,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -260,7 +278,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -273,6 +292,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -286,6 +306,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -299,6 +320,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -311,7 +333,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Page faults",
@@ -323,7 +346,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Network metrics",
@@ -335,7 +359,8 @@
         "width": 304,
         "height": 304
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Network",
@@ -347,7 +372,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -360,6 +386,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -372,7 +399,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "DNS performance",
@@ -384,7 +412,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -397,6 +426,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -409,7 +439,8 @@
         "width": 342,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "",
@@ -423,6 +454,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
@@ -453,7 +485,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -466,6 +499,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -479,6 +513,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -491,7 +526,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "TOP1 - CPU usage %",
@@ -504,6 +540,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "TOP1 - CPU usage %",
       "queries": [
         {
@@ -519,6 +556,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -591,6 +629,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "TOP1 - memory used %",
       "queries": [
         {
@@ -606,6 +645,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -678,6 +718,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "TOP1 - Page faults per second",
       "queries": [
         {
@@ -693,6 +734,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -765,6 +807,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "TOP1 - Disk used %",
       "queries": [
         {
@@ -780,6 +823,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -852,6 +896,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "DNS query time",
       "queries": [
         {
@@ -868,6 +913,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -940,6 +986,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "CPU usage by host",
       "queries": [
         {
@@ -955,6 +1002,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1025,6 +1073,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Memory usage by container",
       "queries": [
         {
@@ -1040,6 +1089,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1110,6 +1160,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "CPU usage by host",
       "queries": [
         {
@@ -1125,6 +1176,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1197,6 +1249,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Traffic in/out",
       "queries": [
         {
@@ -1210,6 +1263,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1223,6 +1277,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1312,6 +1367,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Memory usage by host",
       "queries": [
         {
@@ -1327,6 +1383,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1397,6 +1454,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Memory usage by host",
       "queries": [
         {
@@ -1412,6 +1470,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1484,6 +1543,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Process memory usage",
       "queries": [
         {
@@ -1499,6 +1559,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1569,6 +1630,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Process memory usage",
       "queries": [
         {
@@ -1584,6 +1646,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1663,6 +1726,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Disk throughput write",
       "queries": [
         {
@@ -1679,6 +1743,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1749,6 +1814,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Disk capacity by host",
       "queries": [
         {
@@ -1765,6 +1831,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1835,6 +1902,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Disk throughput read",
       "queries": [
         {
@@ -1851,6 +1919,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1921,6 +1990,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Process CPU usage",
       "queries": [
         {
@@ -1936,6 +2006,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2006,6 +2077,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Process CPU usage",
       "queries": [
         {
@@ -2021,6 +2093,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2099,7 +2172,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -2112,6 +2186,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -2125,6 +2200,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Disk throughput write",
       "queries": [
         {
@@ -2132,6 +2208,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "(100 - builtin:host.availability:splitBy(\"dt.entity.host\")):sort(value(auto,ascending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2208,7 +2285,8 @@
         "width": 418,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -2221,6 +2299,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -2234,6 +2313,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -2241,6 +2321,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:host.mem.avail.pct:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2330,6 +2411,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Data explorer results",
       "queries": [
         {
@@ -2337,6 +2419,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2426,6 +2509,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "CPU usage %",
       "queries": [
         {
@@ -2441,6 +2525,7 @@
             "criteria": []
           },
           "limit": 20,
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2518,6 +2603,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "CPU usage %",
       "queries": [
         {
@@ -2533,6 +2619,7 @@
             "criteria": []
           },
           "limit": 20,
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2610,6 +2697,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     },
     {
@@ -2623,6 +2711,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "CPU usage by container",
       "queries": [
         {
@@ -2636,6 +2725,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -2713,6 +2803,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "APPLICATION",
         "customName": "Applications",

@@ -1,9 +1,9 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.257.164.20221230-102519"
+    "clusterVersion": "1.260.137.20230220-113153"
   },
   "id": "bbbbbbbb-a003-a017-0005-000000000133",
   "dashboardMetadata": {
@@ -29,6 +29,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000133)\n"
     },
     {
@@ -42,6 +43,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n- [mobile or custom app](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000133)\n- [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000133) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
@@ -55,6 +57,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "## 🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n- ✅ [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000133) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000133) \n- [slow requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11100000%144611686018427387%1026%110\n) \n- [failed requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%103%110)"
     },
     {
@@ -68,7 +71,8 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](/ui/logs-events)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+      "isAutoRefreshDisabled": false,
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](ui/log-monitoring)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "Problems",
@@ -81,7 +85,8 @@
         "width": 152,
         "height": 152
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Host health",
@@ -95,6 +100,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -109,6 +115,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -121,7 +128,8 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Database health",
@@ -135,6 +143,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -147,7 +156,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -160,6 +170,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -173,6 +184,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -186,6 +198,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -198,7 +211,8 @@
         "width": 342,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Response time",
@@ -210,7 +224,8 @@
         "width": 456,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -223,6 +238,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -235,7 +251,8 @@
         "width": 456,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -248,6 +265,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -261,6 +279,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -274,6 +293,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -287,6 +307,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -299,7 +320,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Time spent in SQL ",
@@ -311,7 +333,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Failure rate",
@@ -323,7 +346,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Response time",
@@ -335,7 +359,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -348,6 +373,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -360,7 +386,8 @@
         "width": 304,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Database connections",
@@ -372,7 +399,8 @@
         "width": 456,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -385,6 +413,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "- - - "
     },
     {
@@ -399,6 +428,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Synthetic",
@@ -430,6 +460,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Connection database successful %",
       "queries": [
         {
@@ -438,6 +469,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -510,6 +542,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Total connections per minute",
       "queries": [
         {
@@ -518,6 +551,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -590,6 +624,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Number of calls to databases",
       "queries": [
         {
@@ -598,6 +633,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -670,6 +706,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Time spent in database calls (Sum)",
       "queries": [
         {
@@ -678,6 +715,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -750,6 +788,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Failure rate (any  errors)",
       "queries": [
         {
@@ -779,6 +818,7 @@
             ],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -851,6 +891,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Database",
       "queries": [
         {
@@ -859,6 +900,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -929,6 +971,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Database",
       "queries": [
         {
@@ -937,6 +980,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1016,6 +1060,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Response time",
       "queries": [
         {
@@ -1045,6 +1090,7 @@
             ],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1139,6 +1185,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Response time",
       "queries": [
         {
@@ -1168,6 +1215,7 @@
             ],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1255,6 +1303,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Response time",
       "queries": [
         {
@@ -1284,6 +1333,7 @@
             ],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1373,6 +1423,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     },
     {
@@ -1386,6 +1437,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Failure rate (any  errors)",
       "queries": [
         {
@@ -1415,6 +1467,7 @@
             ],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1506,6 +1559,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Failure rate (any  errors)",
       "queries": [
         {
@@ -1535,6 +1589,7 @@
             ],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1625,6 +1680,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Connection success rate",
       "queries": [
         {
@@ -1633,6 +1689,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1723,6 +1780,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Connection success rate",
       "queries": [
         {
@@ -1731,6 +1789,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1823,6 +1882,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "APPLICATION",
         "customName": "Applications",

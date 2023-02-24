@@ -1,9 +1,9 @@
- {
+{
   "metadata": {
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.257.164.20221230-102519"
+    "clusterVersion": "1.260.137.20230220-113153"
   },
   "id": "bbbbbbbb-a003-a017-0004-000000000133",
   "dashboardMetadata": {
@@ -29,6 +29,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000133)\n"
     },
     {
@@ -42,6 +43,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "## 🔍 [Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n***\n\n- [web applications](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)\n- [mobile apps](#dashboard;id=bbbbbbbb-a003-a017-0003-000000000133)\n- ✅ [synthetic (browser)](#dashboard;id=bbbbbbbb-a003-a017-0004-000000000133) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
     },
     {
@@ -55,6 +57,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🔍 [Services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n***\n\n- [services](#dashboard;id=bbbbbbbb-a003-a017-0001-000000000133) \n- [database services](#dashboard;id=bbbbbbbb-a003-a017-0005-000000000133) \n- [synthetic (service)](#dashboard;id=bbbbbbbb-a003-a017-0006-000000000133) \n- [slow requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11500000%144611686018427387%1026%111%1026%112) \n- [failed requests↗](/ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E3%110%1026%112%1026%111) \n"
     },
     {
@@ -68,7 +71,8 @@
         "height": 190
       },
       "tileFilter": {},
-      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](/ui/logs-events)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+      "isAutoRefreshDisabled": false,
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n***\n- [infrastructure](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)\n- [logs↗](ui/log-monitoring)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
     },
     {
       "name": "🚦Health",
@@ -80,7 +84,8 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Problems",
@@ -93,7 +98,8 @@
         "width": 152,
         "height": 152
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Service health",
@@ -107,6 +113,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -121,6 +128,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -135,6 +143,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "chartVisible": true
     },
     {
@@ -148,6 +157,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -160,7 +170,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Repsonse time",
@@ -172,7 +183,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Errors",
@@ -184,7 +196,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -197,6 +210,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -209,7 +223,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Apdex",
@@ -221,7 +236,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -234,6 +250,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -247,6 +264,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -259,7 +277,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -272,6 +291,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -285,6 +305,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -297,7 +318,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -310,6 +332,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -322,7 +345,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -335,6 +359,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -347,7 +372,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -360,6 +386,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -373,6 +400,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Browser monitor",
       "query": "select AVG(duration) AS \" \" from useraction where usersession.userType = \"SYNTHETIC\"",
       "type": "SINGLE_VALUE",
@@ -390,6 +418,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Browser monitor",
       "query": "select count(*) as \"Erreurs HTTP & JavaScript\"  from useraction where javaScriptErrorCount >=1 or requestErrorCount  >=1 and usersession.userType = \"SYNTHETIC\"",
       "type": "SINGLE_VALUE",
@@ -406,7 +435,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -419,6 +449,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -431,7 +462,8 @@
         "width": 266,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -444,6 +476,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -457,6 +490,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Browser monitor",
       "query": "select COUNT(DISTINCT city) AS \"Villes\" from usersession where userType = \"SYNTHETIC\" ",
       "type": "SINGLE_VALUE",
@@ -474,6 +508,7 @@
         "height": 228
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Apdex",
       "query": "SELECT apdexCategory, COUNT(*) AS \"Tests\"  FROM useraction where usersession.userType=\"SYNTHETIC\" GROUP BY apdexCategory ORDER BY  count(*) DESC",
       "type": "TABLE",
@@ -490,6 +525,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Top Tests Apdex",
       "query": "SELECT  domain, top (useraction.name, 5) AS \"Name\", apdexCategory, COUNT(*) AS \"Count\"  FROM useraction where usersession.userType=\"SYNTHETIC\" GROUP BY apdexCategory, domain ORDER BY  count(*) DESC",
       "type": "TABLE",
@@ -507,6 +543,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Check",
@@ -541,6 +578,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Browser monitors",
       "queries": [
         {
@@ -554,6 +592,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -626,6 +665,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Browser monitor",
       "queries": [
         {
@@ -634,6 +674,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:billing.synthetic.actions:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -706,6 +747,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Failed tests",
       "queries": [
         {
@@ -714,6 +756,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:synthetic.browser.event.failure.geo:splitBy(\"dt.entity.synthetic_test_step\",\"dt.entity.geolocation\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -784,6 +827,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Tests : Successful / Failed",
       "queries": [
         {
@@ -792,6 +836,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:synthetic.browser.event.failure.geo:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -800,6 +845,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:synthetic.browser.event.success.geo:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -889,6 +935,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Visually complete (load action)",
       "queries": [
         {
@@ -904,6 +951,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -974,6 +1022,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -989,6 +1038,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         },
         {
@@ -1004,6 +1054,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1093,6 +1144,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1101,6 +1153,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:synthetic.browser.errorCodes.geo:splitBy(\"dt.entity.synthetic_test\",\"By error code\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1171,6 +1224,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1179,6 +1233,7 @@
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:synthetic.browser.errorCodes.geo:splitBy(\"dt.entity.synthetic_test\",\"By error code\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1258,7 +1313,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Unavailability by synthetic",
@@ -1270,7 +1326,8 @@
         "width": 494,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
     },
     {
       "name": "Markdown",
@@ -1283,6 +1340,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -1296,6 +1354,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "----"
     },
     {
@@ -1309,6 +1368,7 @@
         "height": 38
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "markdown": "🎯[SLO simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0008-000000000133;) \n"
     },
     {
@@ -1322,6 +1382,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Tests : Successful / Failed",
       "queries": [
         {
@@ -1331,6 +1392,7 @@
             "dt.entity.synthetic_test"
           ],
           "metricSelector": "(100- builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(sum,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1409,6 +1471,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1425,6 +1488,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1515,6 +1579,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1531,6 +1596,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1625,6 +1691,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1641,6 +1708,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1731,6 +1799,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": " ",
       "queries": [
         {
@@ -1747,6 +1816,7 @@
             "nestedFilters": [],
             "criteria": []
           },
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1841,6 +1911,7 @@
         "height": 304
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "customName": "Tests : Successful / Failed",
       "queries": [
         {
@@ -1850,6 +1921,7 @@
             "dt.entity.geolocation"
           ],
           "metricSelector": "(100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.geolocation\"):sort(value(sum,descending)):limit(20)",
+          "rate": "NONE",
           "enabled": true
         }
       ],
@@ -1929,6 +2001,7 @@
         "height": 190
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "WEB_CHECK",
         "customName": "Clickpath",
@@ -1964,6 +2037,7 @@
         "height": 152
       },
       "tileFilter": {},
+      "isAutoRefreshDisabled": false,
       "filterConfig": {
         "type": "APPLICATION",
         "customName": "Applications",
