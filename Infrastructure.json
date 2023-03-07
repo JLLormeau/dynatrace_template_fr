@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.260.137.20230220-113153"
+    "clusterVersion": "1.261.134.20230302-084304"
   },
   "id": "bbbbbbbb-a003-a017-0007-000000000133",
   "dashboardMetadata": {
@@ -614,8 +614,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.cpu.usage:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -703,8 +703,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.mem.usage:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -792,8 +792,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.mem.avail.pfps:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.mem.avail.pfps:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:host.mem.avail.pfps:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.mem.avail.pfps:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -881,8 +881,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.disk.usedPct:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.disk.usedPct:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:host.disk.usedPct:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.disk.usedPct:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -971,8 +971,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.dns.queryTime:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.dns.queryTime:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:host.dns.queryTime:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.dns.queryTime:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1059,7 +1059,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1146,7 +1146,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:containers.memory.usagePercent:splitBy(\"dt.entity.container_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:containers.memory.usagePercent:splitBy(\"dt.entity.container_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1234,126 +1234,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
-      ]
-    },
-    {
-      "name": "Traffic in/out",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 570,
-        "left": 1330,
-        "width": 684,
-        "height": 304
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "Traffic in/out",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:host.net.nic.trafficIn",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "rate": "NONE",
-          "enabled": true
-        },
-        {
-          "id": "B",
-          "metric": "builtin:host.net.nic.trafficOut",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {},
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "AREA"
-            },
-            "seriesOverrides": []
-          },
-          {
-            "matcher": "B:",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "AREA"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "displayName": "",
-            "visible": true
-          },
-          "yAxes": [
-            {
-              "displayName": "",
-              "visible": true,
-              "min": "AUTO",
-              "max": "AUTO",
-              "position": "LEFT",
-              "queryIds": [
-                "A",
-                "B"
-              ],
-              "defaultAxis": true
-            }
-          ]
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "visible": true
-          }
-        ],
-        "tableSettings": {},
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "metricExpressions": [
-        "resolution=null&(builtin:host.net.nic.trafficIn:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names,(builtin:host.net.nic.trafficOut:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.cpu.usage:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1440,7 +1322,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.mem.usage:splitBy(\"dt.entity.host\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:host.mem.usage:splitBy(\"dt.entity.host\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1528,8 +1410,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:host.mem.usage:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1616,7 +1498,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1712,7 +1594,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1800,7 +1682,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.disk.throughput.write:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:host.disk.throughput.write:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1888,7 +1770,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.disk.usedPct:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:host.disk.usedPct:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1976,7 +1858,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:host.disk.throughput.read:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:host.disk.throughput.read:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2063,7 +1945,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2159,7 +2041,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2205,6 +2087,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "(100 - builtin:host.availability:splitBy(\"dt.entity.host\")):sort(value(auto,ascending)):limit(10)",
@@ -2318,6 +2201,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:host.mem.avail.pct:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
@@ -2416,6 +2300,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [],
           "metricSelector": "builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
@@ -2499,194 +2384,6 @@
       ]
     },
     {
-      "name": "CPU idle % - (red<10% & green>20%)",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 570,
-        "left": 608,
-        "width": 380,
-        "height": 152
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "CPU usage %",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:host.cpu.idle",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.host"
-          ],
-          "sortBy": "ASC",
-          "filterBy": {
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "limit": 20,
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "HONEYCOMB",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "value": 20,
-                "color": "#7dc540"
-              },
-              {
-                "value": 10,
-                "color": "#f5d30f"
-              },
-              {
-                "value": 0,
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": false,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&(builtin:host.cpu.idle:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(20)):names"
-      ]
-    },
-    {
-      "name": "Memory available % - (red<10% & green>20%)",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 608,
-        "width": 380,
-        "height": 152
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "CPU usage %",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:host.mem.avail.pct",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.host"
-          ],
-          "sortBy": "DESC",
-          "filterBy": {
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "limit": 20,
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "HONEYCOMB",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "value": 20,
-                "color": "#7dc540"
-              },
-              {
-                "value": 10,
-                "color": "#f5d30f"
-              },
-              {
-                "value": 0,
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": false,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&(builtin:host.mem.avail.pct:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(20)):names"
-      ]
-    },
-    {
       "name": "Markdown",
       "tileType": "MARKDOWN",
       "configured": true,
@@ -2717,6 +2414,7 @@
         {
           "id": "A",
           "metric": "builtin:containers.cpu.usageSystemMilliCores",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.container_group_instance"
@@ -2823,6 +2521,309 @@
         }
       },
       "chartVisible": true
+    },
+    {
+      "name": "Memory available % - (red<10% & green>20%)",
+      "nameSize": "small",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 608,
+        "width": 380,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "CPU usage %",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AUTO",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "metricSelector": "builtin:host.mem.avail.pct:splitBy(\"dt.entity.host\"):sort(value(auto,descending))",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HONEYCOMB",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 20,
+                "color": "#7dc540"
+              },
+              {
+                "value": 10,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": false,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.mem.avail.pct:splitBy(\"dt.entity.host\"):sort(value(auto,descending))):names"
+      ]
+    },
+    {
+      "name": "CPU idle % - (red<10% & green>20%)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 608,
+        "width": 380,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "CPU usage %",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AUTO",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "metricSelector": "builtin:host.cpu.idle:splitBy(\"dt.entity.host\"):sort(value(auto,ascending))",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HONEYCOMB",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 20,
+                "color": "#7dc540"
+              },
+              {
+                "value": 10,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": false,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:host.cpu.idle:splitBy(\"dt.entity.host\"):sort(value(auto,ascending))):names"
+      ]
+    },
+    {
+      "name": "Traffic in/out",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1330,
+        "width": 684,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Traffic in/out",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.net.nic.trafficIn",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        },
+        {
+          "id": "B",
+          "metric": "builtin:host.net.nic.trafficOut",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "B:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                "B"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:host.net.nic.trafficIn:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names,(builtin:host.net.nic.trafficOut:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names"
+      ]
     }
   ]
 }
