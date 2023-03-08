@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.260.137.20230220-113153"
+    "clusterVersion": "1.261.134.20230302-084304"
   },
   "id": "bbbbbbbb-a003-a017-0001-000000000133",
   "dashboardMetadata": {
@@ -748,8 +748,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -851,8 +851,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -954,8 +954,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.requestCount.total:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1123,7 +1123,7 @@
       ]
     },
     {
-      "name": "Success rate % (the worst)",
+      "name": "Success rate % (avg)",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1221,12 +1221,12 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
-      "name": "Success rate % (the worst)",
+      "name": "Success rate % (avg)",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1324,8 +1324,8 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy():avg:sort(value(avg,descending)):limit(20))"
       ]
     },
     {
@@ -1572,7 +1572,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1668,7 +1668,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -1924,7 +1924,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2020,7 +2020,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2107,7 +2107,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2203,7 +2203,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2290,7 +2290,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2386,7 +2386,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=null&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2676,7 +2676,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2797,7 +2797,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -2917,7 +2917,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3037,7 +3037,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -3145,8 +3145,8 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.response.time:splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names",
-        "resolution=null&(builtin:service.response.time:splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20))"
+        "resolution=Inf&(builtin:service.response.time:splitBy():percentile(90.0):sort(value(percentile(90.0),descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.response.time:splitBy():percentile(90.0):sort(value(percentile(90.0),descending)):limit(20))"
       ]
     },
     {
@@ -3233,6 +3233,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service"
@@ -3322,6 +3323,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service"
@@ -3411,6 +3413,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service"
@@ -3511,6 +3514,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service"
@@ -3609,6 +3613,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service"
@@ -3709,6 +3714,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service"
@@ -3861,6 +3867,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service_method"
@@ -3946,6 +3953,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service_method"
@@ -4034,6 +4042,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service_method"
@@ -4135,6 +4144,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service_method"
@@ -4223,6 +4233,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service_method"
@@ -4308,6 +4319,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.service_method"
@@ -4544,7 +4556,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -4666,7 +4678,7 @@
         "resolution": ""
       },
       "metricExpressions": [
-        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(20)):limit(100):names"
+        "resolution=null&(builtin:service.successes.server.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:sort(value(avg,ascending)):limit(20)):limit(100):names"
       ]
     }
   ]
