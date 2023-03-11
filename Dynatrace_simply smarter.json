@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.260.137.20230220-113153"
+    "clusterVersion": "1.261.134.20230302-084304"
   },
   "id": "bbbbbbbb-a003-a017-0000-000000000133",
   "dashboardMetadata": {
@@ -363,7 +363,7 @@
         }
       },
       "metricExpressions": [
-        "resolution=Inf&(builtin:service.requestCount.total:splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+        "resolution=Inf&(builtin:service.requestCount.total:splitBy(\"dt.entity.service\"):avg:sort(value(avg,descending)):limit(20)):limit(100):names"
       ]
     },
     {
@@ -392,7 +392,7 @@
       },
       "tileFilter": {},
       "isAutoRefreshDisabled": false,
-      "markdown": "\n## 1) Filter your application\n \n- select a management zone based on the application\n(click on the funnel icon at the top left)\n- select the timeframe period\n\n\n## 2) Select your analyze   \n- **[Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)** :     \n=> user experience analysis measured from browser or mobile   device\n- **[Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000133)** :   \n=> full stack analysis of the distributed traces\n- **[Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)** :   \n=> process, hosts & cloud\n- **[Service Level Objectives](/ui/slo?slosc=name&slosd=asc&sloglobal=false&gtf=-7d%20to%20now)** :   \n=> slo based on management zone \n\nclick [here](https://github.com/dynatrace-ace-services/easy-itsm-integration/tree/main/template_monaco) to create applications and SLOs alerts based on management zone\n"
+      "markdown": "\n## 1) Filter your application\n \n- select a management zone based on the application\n(click on the funnel icon at the top left)\n- select the timeframe period\n\n\n## 2) Select your analyze   \n- **[Digital experience](#dashboard;id=bbbbbbbb-a003-a017-0002-000000000133)** :     \n=> user experience analysis measured from browser or mobile   device\n- **[Services](#dashboard/dashboard;id=bbbbbbbb-a003-a017-0001-000000000133)** :   \n=> full stack analysis of the distributed traces\n- **[Infrastructure & cloud](#dashboard;id=bbbbbbbb-a003-a017-0007-000000000133)** :   \n=> process, hosts & cloud\n- **[Service Level Objectives](/ui/slo?slosc=name&slosd=asc&sloglobal=false&gtf=-7d%20to%20now)** :   \n=> slo based on management zone \n\nclick [here](https://github.com/dynatrace-ace-services/itsm-integration-with-slo/tree/main/monaco-template) to create applications and SLOs alerts based on management zone\n"
     },
     {
       "name": "Markdown",
@@ -453,6 +453,7 @@
       "queries": [
         {
           "id": "A",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "Apdex category"
@@ -582,6 +583,7 @@
         {
           "id": "A",
           "metric": "builtin:host.cpu.usage",
+          "spaceAggregation": "AUTO",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.host"
@@ -782,7 +784,7 @@
         "foldTransformation": "LAST_VALUE"
       },
       "metricExpressions": [
-        "resolution=null&(builtin:security.vulnerabilities.countAffectedEntities:splitBy(\"Risk Level\"):count:auto:sort(value(avg,descending)):limit(20)):limit(100):names:last"
+        "resolution=null&(builtin:security.vulnerabilities.countAffectedEntities:splitBy(\"Risk Level\"):count:sort(value(avg,descending)):limit(20)):limit(100):names:last"
       ]
     },
     {
