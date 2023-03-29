@@ -1951,7 +1951,7 @@
           "spaceAggregation": "AVG",
           "timeAggregation": "DEFAULT",
           "splitBy": [],
-          "metricSelector": "builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+          "metricSelector": "builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy():avg",
           "rate": "NONE",
           "enabled": true
         }
