@@ -453,7 +453,7 @@
       "queries": [
         {
           "id": "A",
-          "spaceAggregation": "AUTO",
+          "spaceAggregation": "SUM",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "Apdex category"
@@ -583,7 +583,7 @@
         {
           "id": "A",
           "metric": "builtin:host.cpu.usage",
-          "spaceAggregation": "AUTO",
+          "spaceAggregation": "AVG",
           "timeAggregation": "DEFAULT",
           "splitBy": [
             "dt.entity.host"
