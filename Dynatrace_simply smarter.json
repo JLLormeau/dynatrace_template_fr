@@ -3,7 +3,7 @@
     "configurationVersions": [
       6
     ],
-    "clusterVersion": "1.261.134.20230302-084304"
+    "clusterVersion": "1.262.137.20230317-134319"
   },
   "id": "bbbbbbbb-a003-a017-0000-000000000133",
   "dashboardMetadata": {
@@ -437,102 +437,6 @@
       "markdown": "## - [SLO Resource Optimization](#dashboard;id=bbbbbbbb-a003-a017-0009-000000000133)\n\noptimize the resource consumption with these SLOs, first step to reduce the cost of your infrastructure and improve your CO2 footprint "
     },
     {
-      "name": "ApdexCategory",
-      "nameSize": "small",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 1102,
-        "width": 266,
-        "height": 152
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "ApdexCategory",
-      "queries": [
-        {
-          "id": "A",
-          "spaceAggregation": "SUM",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "Apdex category"
-          ],
-          "metricSelector": "(builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):default(0) + builtin:apps.other.uaCount.osAndApdex:splitBy(\"Apdex category\"):default(0)):value:auto:sort(value(sum,descending)):limit(10) ",
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TOP_LIST",
-        "global": {},
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "STACKED_AREA"
-            },
-            "seriesOverrides": [
-              {
-                "name": "SATISFIED",
-                "color": "#008000"
-              },
-              {
-                "name": "TOLERATING",
-                "color": "#f5d30f"
-              },
-              {
-                "name": "FRUSTRATED",
-                "color": "#FF0000"
-              }
-            ]
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "visible": true
-          }
-        ],
-        "tableSettings": {},
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&((builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):default(0)+builtin:apps.other.uaCount.osAndApdex:splitBy(\"Apdex category\"):default(0)):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names:fold(auto)"
-      ]
-    },
-    {
       "name": "",
       "nameSize": "small",
       "tileType": "APPLICATIONS",
@@ -564,100 +468,6 @@
         }
       },
       "chartVisible": true
-    },
-    {
-      "name": "CPU usage %",
-      "nameSize": "small",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 1178,
-        "width": 342,
-        "height": 304
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "CPU usage %",
-      "queries": [
-        {
-          "id": "A",
-          "metric": "builtin:host.cpu.usage",
-          "spaceAggregation": "AVG",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.host"
-          ],
-          "sortBy": "DESC",
-          "filterBy": {
-            "nestedFilters": [],
-            "criteria": []
-          },
-          "limit": 10,
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TOP_LIST",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "columnId": "CPU idle",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "A",
-            "visible": false
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(10)):limit(100):names"
-      ]
     },
     {
       "name": "Smartscape",
@@ -842,6 +652,207 @@
       "tileFilter": {},
       "isAutoRefreshDisabled": false,
       "markdown": "## 🚦[Health](/ui/problems)"
+    },
+    {
+      "name": "CPU usage %",
+      "nameSize": "small",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1178,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "CPU usage %",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.cpu.usage",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "sortBy": "DESC",
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "limit": 10,
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "CPU idle",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "A",
+            "visible": false
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": "",
+        "foldTransformation": "TOTAL",
+        "foldAggregation": "AVG"
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):avg:sort(value(avg,descending)):limit(10)):limit(100):names:fold(avg)"
+      ]
+    },
+    {
+      "name": "ApdexCategory",
+      "nameSize": "small",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1102,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "ApdexCategory",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "Apdex category"
+          ],
+          "metricSelector": "(builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):default(0) + builtin:apps.other.uaCount.osAndApdex:splitBy(\"Apdex category\"):default(0)):value:auto:sort(value(sum,descending)):limit(10) ",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "STACKED_AREA"
+            },
+            "seriesOverrides": [
+              {
+                "name": "SATISFIED",
+                "color": "#008000"
+              },
+              {
+                "name": "TOLERATING",
+                "color": "#f5d30f"
+              },
+              {
+                "name": "FRUSTRATED",
+                "color": "#FF0000"
+              }
+            ]
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": "",
+        "foldTransformation": "TOTAL",
+        "foldAggregation": "SUM"
+      },
+      "metricExpressions": [
+        "resolution=null&((builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):default(0)+builtin:apps.other.uaCount.osAndApdex:splitBy(\"Apdex category\"):default(0)):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names:fold(sum)"
+      ]
     }
   ]
 }
